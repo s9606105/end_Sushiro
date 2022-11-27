@@ -93,6 +93,58 @@
                     <span class="visually-hidden">Next</span>
                   </button>
                 </div>
+                <div>
+
+                </div>
+                <div id="sub_menu_bg">
+                    <div id="sub_menu">
+                        <h2 class="title01">菜單</h2>
+                        <div class="manu_change">
+                            <div class="menu_btn">
+                                <a href="#">
+                                    <img class="menu_btn_img" src="https://www.sushiro.com.tw/content/images/menu1.svg" />
+                                    <span class="m_btn btn">期間限定</span>
+                                </a>
+                            </div>
+                            <div class="menu_btn">
+                                <a href="#">
+                                    <img class="menu_btn_img" src="https://www.sushiro.com.tw/content/images/menu2.svg" />
+                                    <span class="m_btn btn">外帶菜單</span>
+                                </a>
+                            </div>
+                            <div class="menu_btn">
+                                <a href="#">
+                                    <img class="menu_btn_img" src="https://www.sushiro.com.tw/content/images/menu3.svg" />
+                                    <span class="m_btn btn">握壽司</span>
+                                </a>
+                            </div>
+                            <div class="menu_btn">
+                                <a href="#">
+                                    <img class="menu_btn_img" src="https://www.sushiro.com.tw/content/images/menu4.svg" />
+                                    <span class="m_btn btn">軍艦．卷類</span>
+                                </a>
+                            </div>
+                            <div class="menu_btn">
+                                <a href="#">
+                                    <img class="menu_btn_img" src="https://www.sushiro.com.tw/content/images/menu5.svg" />
+                                    <span class="m_btn btn">麵類．湯類</span>
+                                </a>
+                            </div>
+                            <div class="menu_btn">
+                                <a href="#">
+                                    <img class="menu_btn_img" src="https://www.sushiro.com.tw/content/images/menu6.svg" />
+                                    <span class="m_btn btn">副餐類</span>
+                                </a>
+                            </div>
+                            <div class="menu_btn">
+                                <a href="#">
+                                    <img class="menu_btn_img" src="https://www.sushiro.com.tw/content/images/menu7.svg" />
+                                    <span class="m_btn btn">甜點．飲料</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- end content -->
             <div id="footer">
