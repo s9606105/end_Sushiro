@@ -1,0 +1,164 @@
+﻿/* html */
+body {
+    margin: auto;
+}
+
+/* id */
+#header {
+}
+
+#layout {
+    margin-top: 15px;
+    margin-right: 20%;
+    margin-left: 20%;
+    width: 60%;
+    height: 120px;
+}
+
+#d_c1 {
+    margin-top: 45px;
+    width: 50%;
+    float: left;
+}
+
+#d_c2 {
+    margin-top: 45px;
+    width: 50%;
+    float: right;
+}
+
+#it01 {
+    width: 220px;
+    float: right;
+}
+
+#hp_menu {
+    height: 54px;
+    border-bottom: 5px solid #a70719;
+}
+
+#carousel {
+    height: 720px;
+    width: 100%;
+}
+
+#footer {
+    height: 200px;
+    background-color: #f7f7f7;
+    background-image: url(https://www.sushiro.com.tw/Content/images/ring.svg);
+    background-repeat: repeat;
+    display: flex;
+}
+
+#footer_cont {
+    width: 1140px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#footer_left {
+    float: left;
+    width: 33%;
+}
+
+#footer_right {
+    float: right;
+    width: 66%;
+}
+
+/* class */
+.logo1, .logo2 {
+    height: 15px;
+    background-repeat: no-repeat;
+}
+
+.logo1 {
+    /*            margin-left:8px;*/
+    width: 150px;
+    background-image: url(https://www.sushiro.com.tw/Content/images/slogin1.svg);
+}
+
+.logo2 {
+    width: 175px;
+    background-image: url(https://www.sushiro.com.tw/Content/images/slogin2.svg);
+}
+
+.logo3 {
+    position: absolute;
+    left: 50%;
+    margin: 0 0 0 -50px;
+    bottom: 75px;
+    height: 100px;
+    width: 100px;
+}
+
+.d_btn {
+    background-color: #a70719;
+    color: #ffffff;
+    padding: 8px 13px 12px;
+    border-radius: 50px;
+    border: 0;
+    float: left;
+}
+
+.icon {
+    margin-top: 5%;
+    flex: 0 0 100px;
+    background-repeat: no-repeat;
+}
+
+    .icon > a > img {
+        margin-left: 20px;
+        height: 20px;
+        width: 20px;
+    }
+
+.collapse {
+    display: flex;
+}
+
+.nav-link {
+    font-size: 16px;
+    color: #1a1311;
+    margin: 0 15px;
+    padding: 15px;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    display: flex;
+}
+    /* 顯示清單 */
+    .navbar-nav li:hover > ul.dropdown-menu {
+        display: block;
+        border: none;
+    }
+
+li > a {
+    letter-spacing: 3px;
+}
+
+ul > li > a:hover:after {
+    transform: rotate(-180deg);
+    transition: 1s; /* 旋轉時間 */
+}
+
+.nav-link::after {
+    background-image: url(https://www.sushiro.com.tw/Content/images/arrow.svg);
+}
+
+.carousel_img {
+    height: 720px;
+    background-position: center center;
+    background: transparent no-repeat;
+    width: 100%;
+}
+
+.toggler-icon {
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://www.sushiro.com.tw/Content/images/list.svg);
+}
