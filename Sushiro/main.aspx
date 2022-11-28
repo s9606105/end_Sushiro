@@ -93,6 +93,7 @@
                     <span class="visually-hidden">Next</span>
                   </button>
                 </div>
+                <!-- end carousel -->
                 <div>
 
                 </div>
@@ -144,6 +145,25 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <!-- end sub_menu_bg -->
+                
+                <div>
+                    <div id="sub_ad">;
+                        <div class="sub_ani">
+                            <h2 class="title02">活動公告</h2>
+                            <div class="sub_ani_ad">
+                                <div class="ani01">
+                                    <div></div>
+                                </div>
+                                <div class="ani01">
+
+                                </div>
+                                <div class="ani01">
+
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
             <!-- end content -->
