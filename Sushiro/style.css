@@ -148,11 +148,15 @@ body {
     flex-direction: row;
     display: flex;
 }
-    /* 顯示清單 */
-    .navbar-nav li:hover > ul.dropdown-menu {
-        display: block;
-        border: none;
-    }
+.ani_img{
+    height:250px;
+}
+
+/* 顯示清單 */
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+    border: none;
+}
 
 li > a {
     letter-spacing: 3px;
@@ -213,4 +217,25 @@ ul > li > a:hover:after {
     width:55px;
     font-size:26px;
     border-bottom: 2px solid #a70719;
+}
+.sub_ani {
+    height:468px;
+    width:1140px;
+    margin: 0 auto;
+}
+._ {
+    height: 4px;
+    background-color: #a70719;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 60px;
+}
+.r_btn {
+    float: right;
+    
+}
+
+.ani01 {
+    float: left;
+    margin-right:40px;
 }

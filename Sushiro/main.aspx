@@ -154,12 +154,40 @@
                             <h2 class="title02">活動公告</h2>
                             <div class="sub_ani_ad">
                                 <div class="ani01">
-                                    <div></div>
+                                <a href="#">
+                                    <img class="ani_img"src="https://www.sushiro.com.tw/Upload/News/00a24540-d0ee-4675-a157-826625cab05a.jpg" />
+                                    <div class="ani_text">
+                                        <p>11/30~12/18贅澤海味</p>
+                                        <div class="_"></div>
+                                        <div class="btn_more">
+                                            <span class="m_btn btn r_btn">more</span>                                         
+                                        </div>
+                                    </div>
+                                </a>
                                 </div>
                                 <div class="ani01">
-
+                                <a href="#">
+                                    <img class="ani_img"src="https://www.sushiro.com.tw/Upload/News/b8e81c70-cee2-4131-a87a-233725cb6023.jpg" />
+                                    <div class="ani_text">
+                                        <p>【壽司郎創意吃法⼩⾷堂──正宗鰻魚二吃篇】⁣</p>
+                                        <div class="_"></div>
+                                        <div class="btn_more">
+                                            <span class="m_btn btn r_btn">more</span>                                         
+                                        </div>
+                                    </div>
+                                </a>                               
                                 </div>
                                 <div class="ani01">
+                                <a href="#">
+                                    <img class="ani_img" src="https://www.sushiro.com.tw/Upload/News/e03d8840-d342-46d6-8d05-cb763b86f1ae.jpg" />
+                                    <div class="ani_text">
+                                        <p>【壽司郎創意吃法⼩⾷堂──第三話：超驚喜甜鹹層次⼼臟爆擊的秘密吃法篇】⁣</p>
+                                        <div class="_"></div>
+                                        <div class="btn_more">
+                                            <span class="m_btn btn r_btn">more</span>                                         
+                                        </div>
+                                    </div>
+                                </a>
 
                                 </div>
                             </div>
