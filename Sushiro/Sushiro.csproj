@@ -270,6 +270,7 @@
     <Content Include="main.aspx" />
     <Content Include="Menu.aspx" />
     <Content Include="QA.aspx" />
+    <Content Include="style.css" />
     <Content Include="Test.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>

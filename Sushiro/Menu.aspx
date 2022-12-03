@@ -5,245 +5,152 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     
-<style>
-    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline;
-        outline: 0;
-    }
-    .swiper-wrapper {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        display: flex;
-        transition-property: transform;
-        box-sizing: content-box;
-    }
-    .container-fluid {
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .inner-menu {
-        position: sticky;
-        top: 0;
-        background: #ffffff;
-        padding: 15px 0;
-        z-index: 9;
-        border-bottom: 2px solid #f7f7f7;
-        box-shadow: 0 2px 5px #f7f7f7;
-    }
-    .content-frame {
-        padding: 50px 0 65px;
-    }
-    .swiper-index-menu {
-        overflow: hidden;
-        padding: 0 0 40px;
-    }
-    .container {
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .swiper-container-pointer-events {
-        touch-action: pan-y;
-    }
-
-    .swiper {
-        width: 100%;
-        height: 100%;
-    }
-
-    .swiper-slide{
-        flex-shrink: 0;
-        width: 100%;
-        height: 100%;
-        position: relative;
-        transition-property: transform;
-    }
-
-    .swiper-index-menu .swiper-slide span {
-        transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -webkit-transition: all 0.3s;
-
-        -o-transition: all 0.3s;
-        background-color: #a70719;
-        color: #ffffff;
-        padding: 8px 13px 12px;
-        border-radius: 50px;
-        border: 0;
-    }
-    .swiper-index-menu .swiper-slide {
-        font-weight: inherit;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: 3px;
-        text-align: center;
-    }
-    .swiper-index-menu .swiper-slide img {
-        width: 40px;
-        height: 40px;
-        display: block;
-        margin: 0 auto 15px;
-    }
-    section{
-        display:block;
-    }
-    .background-menu-title {
-        background-color: #f7f7f7;
-        background-image: url("../images/icon/service-bg.svg");
-        background-repeat: repeat;
-        background-size: 343px 243px;
-        background-attachment: fixed;
-        margin: 0 0 50px;
-    }
-    .background-menu-title h2 {
-        font-weight: 100;
-        font-size: 26px;
-        line-height: 24px;
-        letter-spacing: 3px;
-        margin-bottom: 40px;
-        display: inline-block;
-        padding: 0 0 5px;
-        border-bottom: 4px solid #a70719;
-        margin-bottom: 0;
-        border: 0;
-        display: flex;
-        align-items: center;
-        height: 120px;
-        letter-spacing: 0;
-    }
-    .font-16{
-        font-size:16px;
-    }
-    .iconimg{
-        height:40px;
-        width:40px;
-    }
-    .inner-content-title {
-        font-weight: 100;
-        font-size: 26px;
-        line-height: 24px;
-        letter-spacing: 3px;
-        margin-bottom: 40px;
-        display: inline-block;
-        padding: 0 0 5px;
-        border-bottom: 4px solid #a70719;
-    }
-    .sushi-box {
-        text-align: center;
-        display: inline-block;
-        width: calc(100% / 4 - 3px);
-        margin-bottom: 50px;
-    }
-    body{
-        font-weight:bold;
-    }
-    .sushi-box .sushi {
-        position: relative;
-        width: 200px;
-        height: 200px;
-        background-color: #f7f7f7;
-        border-radius: 50%;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin: 0 auto 25px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 15px;
-    }
-    .sushi-box .sushi img {
-        width: 100%;
-    }
-    .sushi-box .sushi .limited {
-        position: absolute;
-        bottom: 0;
-        right: -20px;
-        width: 70px;
-    }
-    @media (max-width: 991px) {
-        .sushi-box .sushi {
-            width: 150px;
-            height: 150px;
-            background-size: cover;
-            padding: 5px;
-        }
-    }
-    @media (max-width: 767px){
-    .sushi-box {
-            width: calc(100% / 2 - 3px);
-        }
-    }
-    .sushi-frame .sushi-box .sushi-name, .sushi-frame .sushi-box .sushi-price {
-        font-size: 20px;
-    }
-    p {
-        font-weight: 100;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: 3px;
-        font-weight:bolder;
-    }
-    .w12 {
-        max-width: 1280px;
-        
-    }
-    
-
-
-
-
-
-
-</style>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>菜單 - 台湾スシロー 台灣壽司郎</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.css" />
     <script type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="https://www.sushiro.com.tw/Content/images/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="style.css" type="text/css" rel="stylesheet" />
 </head>
 <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
 
     <form id="form1" runat="server">
-        <div class ="content-frame aos-init aos-animate" data-aos="fade-zoom-in">
+        <!-- header -->
+        <div id="header">
+                <div id="layout">
+                    <div id="d_c1">
+                        <img class="logo1" src="#" />
+                        <img class="logo2" src="#" />
+                    </div>
+                    <div id="d_c2">
+                        <div id="it01">
+                            <a class="btn d_btn" href="#">立即訂位</a>
+                            <div class="icon">
+                                <a href="https://page.line.me/sushiro.tw?openQrModal=true">
+                                    <img src="https://www.sushiro.com.tw/Content/images/line.svg" />
+                                </a>
+                                <a href="https://www.facebook.com/Sushiro.TW/">
+                                    <img src="https://www.sushiro.com.tw/Content/images/fb.svg" />
+                                </a>
+                                <a href="https://www.instagram.com/sushiro.tw/?hl=zh-tw">
+                                    <img src="https://www.sushiro.com.tw/Content/images/ig.svg" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end layout -->
+                <div id="hp_menu">
+                    <nav class="navbar navbar-expand-lg">
+                        <a href="https://www.sushiro.com.tw/" class="logo-frame">
+                            <img class="logo3" src="https://www.sushiro.com.tw/Content/images/LOGO.svg" />
+                        </a>
+                        <!-- RWD button -->
+                        <button class="navbar-toggler hamburger-menu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu_list">
+                            <div class="toggler-icon"></div>
+                        </button>
+                        <!-- 導覽列超連結 -->
+                        <div class="collapse navbar-collapse justify-content-md-center" id="menu_list">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <!-- dropdown 下拉式功能 -->
+                                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#">關於壽司郎</a>
+                                    <!-- 下拉式選項 -->
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-submenu"><a class="dropdown-item" href="CompanyPhy.aspx">公司理念</a></li>
+                                        <li class="dropdown-submenu"><a class="dropdown-item" href="#">點餐說明</a></li>
+                                        <li class="dropdown-submenu"><a class="dropdown-item" href="#">集點卡相關</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-link" href="#">店鋪一覽</a></li>
+                                <li><a class="nav-link" href="Menu.aspx">菜單</a></li>
+                                <li><a class="nav-link" href="#">人才招募</a></li>
+                                <li><a class="nav-link" href="#">店鋪募集</a></li>
+                                <li><a class="nav-link" href="QA.aspx">常見問題</a></li>
+                                <li><a class="nav-link" href="#">聯絡我們</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!--end of navbar-->
+                </div>
+                <!-- end hp_menu -->
+            </div>
+        <!-- end header -->
+        <div class ="title-frame-content">
+            <div class="container w12">
+                <h1 style=" font-weight:bold;">菜單</h1>
+            </div>
+        </div>
+
+        
+        <!-- container -->
+        <div class ="menu-content-frame aos-init aos-animate" data-aos="fade-zoom-in">
             <div class="container-fluid inner-menu">
                 <div class ="container w12" >
-                    <div class="swiper mySwiper" >
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide img" style="width: 132.857px; margin-right: 30px; top: 8px; left: 2px; ">
-                            <asp:Image ID="Image1" runat="server" src="images/icon/icon0.svg" ImageUrl="~/images/icon/icon0.svg" Height="40px" Width="40px"  />
-                            <span>123sasf</span>
-                        </div>                      
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 4</div>
-                        <div class="swiper-slide">Slide 5</div>
-                        <div class="swiper-slide">Slide 6</div>
-                        <div class="swiper-slide">Slide 7</div>
-                      </div>
-                      <div class="swiper-pagination"></div>
+                    <div class="swiper-index-menu" >
+                        <div class="swiper hi">
+                            <div class="swiper-wrapper" >
+                                <div class="swiper-slide" style=" margin-right: 30px; top: 8px; left: 2px; height:100px; ">
+                                    <a href="#t1" style="text-decoration:none;">
+                                        <asp:Image ID="Image1" runat="server" ImageUrl="~/images/icon/icon0.svg" Height="40px" Width="40px"  />
+                                        <span>期間限定</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide" style=" margin-right: 30px; top: 8px; left: 2px; height:100px; ">
+                                    <a href="#t2" style="text-decoration:none;">
+                                        <asp:Image ID="Image2" runat="server"  ImageUrl="~/images/icon/icon1.svg" Height="40px" Width="40px"  />
+                                        <span>外帶菜單</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide" style=" margin-right: 30px; top: 8px; left: 2px; height:100px; ">
+                                    <a href="#t3" style="text-decoration:none;">
+                                        <asp:Image ID="Image3" runat="server"  ImageUrl="~/images/icon/icon2.svg" Height="40px" Width="40px"  />
+                                        <span>握壽司</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide" style=" margin-right: 30px; top: 8px; left: 2px; height:100px; ">
+                                    <a href="#t4" style="text-decoration:none;">
+                                        <asp:Image ID="Image4" runat="server"  ImageUrl="~/images/icon/icon3.svg" Height="40px" Width="40px"  />
+                                        <span>軍艦・卷類</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide" style=" margin-right: 30px; top: 8px; left: 2px; height:100px; ">
+                                    <a href="#t5" style="text-decoration:none;">
+                                        <asp:Image ID="Image5" runat="server" ImageUrl="~/images/icon/icon4.svg" Height="40px" Width="40px"  />
+                                        <span>麵類・湯類</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide" style=" margin-right: 30px; top: 8px; left: 2px; height:100px; ">
+                                    <a href="#t6" style="text-decoration:none;">
+                                        <asp:Image ID="Image6" runat="server"  ImageUrl="~/images/icon/icon5.svg" Height="40px" Width="40px"  />
+                                        <span>副餐類</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide" style=" margin-right: 30px; top: 8px; left: 2px; height:100px; ">
+                                    <a href="#t7" style="text-decoration:none;">
+                                        <asp:Image ID="Image7" runat="server" ImageUrl="~/images/icon/icon6.svg" Height="40px" Width="40px"  />
+                                        <span>甜點・飲料</span>
+                                    </a>
+                                </div>
+                                    
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
-            <section>
+            <section class="menu-section">
                 <div class="container-fluid background-menu-title">
                     <div class="container w12">
-                        <h2>
+                        <a name="t1"><h2 style="margin-top: 0px;">
                             <img src="images/icon/icon0.svg" class="iconimg"/>
                             <span>期間限定</span>
                             <span class="font-16">※商品數量有限，依各店鋪實際販售情況會有所不同，如提前完售敬請見諒​</span>
-                        </h2>
+                        </h2></a>
                     </div>
                 </div>
                 <div class="container w12">
@@ -409,13 +316,13 @@
                 </div>
 
             </section>
-            <section>
+            <section class="menu-section">
                 <div class="container-fluid background-menu-title">
                     <div class="container w12">
-                        <h2>
+                        <a name="t2"><h2 style="margin-top: 0px;">
                             <img src="images/icon/icon1.svg" class="iconimg"/>
                             <span>外帶菜單</span>
-                        </h2>
+                        </h2></a>
                     </div>
                 </div>
                 <div class="container w12">
@@ -1245,13 +1152,13 @@
                 </div>
 
             </section>
-            <section>
+            <section class="menu-section">
                 <div class="container-fluid background-menu-title">
                     <div class="container w12">
-                        <h2>
+                        <a name="t3"><h2 style="margin-top: 0px;">
                             <img src="images/icon/icon2.svg" class="iconimg"/>
                             <span>握壽司</span>
-                        </h2>
+                        </h2></a>
                     </div>
                 </div>
                 <div class="container w12">
@@ -1262,26 +1169,1145 @@
                                 <img src="images/sufour/sf0.png"/>
                             </div>
                             <p class="sushi-name">
-                                    <asp:Label ID="Label1" runat="server" ></asp:Label></p>
+                                    <asp:Label ID="n96" runat="server" ></asp:Label></p>
                                 <p class="sushi-price">
-                                    <asp:Label ID="Label2" runat="server" ></asp:Label></p>
+                                    <asp:Label ID="p96" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf1.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n97" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p97" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf2.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n98" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p98" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf3.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n99" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p99" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf4.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n100" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p100" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf5.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n101" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p101" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf6.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n102" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p102" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf7.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n103" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p103" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf8.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n104" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p104" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf9.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n105" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p105" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf10.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n106" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p106" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf11.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n107" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p107" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf12.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n108" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p108" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf13.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n109" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p109" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf14.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n110" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p110" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf15.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n111" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p111" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf16.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n112" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p112" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf17.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n113" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p113" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf18.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n114" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p114" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf19.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n115" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p115" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf20.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n116" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p116" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf21.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n117" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p117" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf22.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n118" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p118" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf23.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n119" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p119" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf24.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n120" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p120" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf25.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n121" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p121" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf26.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n122" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p122" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf27.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n123" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p123" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf28.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n124" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p124" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf29.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n125" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p125" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf30.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n126" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p126" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf31.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n127" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p127" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sufour/sf32.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n128" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p128" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        
+                    </div>
+                    <h2 class="inner-content-title">握壽司60元</h2>
+                    <div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/susix/ss0.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n129" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p129" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/susix/ss1.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n130" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p130" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/susix/ss2.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n131" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p131" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/susix/ss3.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n132" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p132" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/susix/ss4.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n133" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p133" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/susix/ss5.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n134" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p134" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/susix/ss6.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n135" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p135" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/susix/ss7.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n136" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p136" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/susix/ss8.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n137" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p137" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/susix/ss9.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n138" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p138" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/susix/ss10.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n139" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p139" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/susix/ss11.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n140" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p140" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/susix/ss12.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n141" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p141" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+
+                        </div>
+                    </div>
+                    <h2 class="inner-content-title">握壽司80元</h2>
+                    <div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sueight/se0.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n142" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p142" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sueight/se1.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n143" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p143" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/sueight/se2.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n144" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p144" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="menu-section">
+                <div class="container-fluid background-menu-title">
+                    <div class="container w12">
+                        <a name="t4"><h2 style="margin-top: 0px;">
+                            <img src="images/icon/icon3.svg" class="iconimg"/>
+                            <span>軍艦・卷類</span>
+                        </h2></a>
+                    </div>
+                </div>
+                <div class="container w12">
+                    <h2 class="inner-content-title">軍艦</h2>
+                    <div>   
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/warship/w0.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n145" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p145" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/warship/w1.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n146" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p146" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/warship/w2.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n147" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p147" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/warship/w3.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n148" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p148" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/warship/w4.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n149" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p149" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/warship/w5.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n150" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p150" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/warship/w6.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n151" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p151" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/warship/w7.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n152" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p152" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/warship/w8.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n153" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p153" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/warship/w9.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n154" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p154" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/warship/w10.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n155" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p155" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+
+                        
+                    </div>
+                    <h2 class="inner-content-title">卷類</h2>
+                    <div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/roll/r0.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n156" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p156" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/roll/r1.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n157" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p157" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/roll/r2.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n158" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p158" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="menu-section">
+                <div class="container-fluid background-menu-title">
+                    <div class="container w12">
+                        <a name="t5"><h2 style="margin-top: 0px;">
+                            <img src="images/icon/icon4.svg" class="iconimg"/>
+                            <span>麵類・湯類</span>
+                        </h2></a>
+                    </div>
+                </div>
+                <div class="container w12">
+                    <h2 class="inner-content-title">麵類</h2>
+                    <div>   
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/noodles/n0.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n159" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p159" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/noodles/n1.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n160" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p160" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/noodles/n2.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n161" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p161" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/noodles/n3.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n162" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p162" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/noodles/n4.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n163" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p163" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        
+                    </div>
+                    <h2 class="inner-content-title">湯類</h2>
+                    <div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/soups/s0.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n164" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p164" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/soups/s1.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n165" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p165" runat="server" ></asp:Label></p>
                             <p class="new-product">&nbsp;</p>
                         </div>
                         
                     </div>
                 </div>
-
+            </section>
+            <section class="menu-section">
+                <div class="container-fluid background-menu-title">
+                    <div class="container w12">
+                        <a name="t6"><h2 style="margin-top: 0px;">
+                            <img src="images/icon/icon5.svg" class="iconimg"/>
+                            <span>副餐類</span>
+                        </h2></a>
+                    </div>
+                </div>
+                <div class="container w12">
+                    <h2 class="inner-content-title">炸物</h2>
+                    <div>   
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/fried-food/f0.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n166" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p166" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/fried-food/f1.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n167" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p167" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/fried-food/f2.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n168" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p168" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/fried-food/f3.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n169" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p169" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/fried-food/f4.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n170" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p170" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/fried-food/f5.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n171" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p171" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        
+                    </div>
+                    <h2 class="inner-content-title">小菜</h2>
+                    <div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/side-dish/si0.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n172" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p172" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/side-dish/si1.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n173" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p173" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/side-dish/si2.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n174" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p174" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/side-dish/si3.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n175" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p175" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="menu-section">
+                <div class="container-fluid background-menu-title">
+                    <div class="container w12">
+                        <a name="t7"><h2 style="margin-top: 0px;">
+                            <img src="images/icon/icon6.svg" class="iconimg"/>
+                            <span>甜點・飲料</span>
+                        </h2></a>
+                    </div>
+                </div>
+                <div class="container w12">
+                    <h2 class="inner-content-title">甜點</h2>
+                    <div>   
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/desserts/d0.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n176" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p176" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/desserts/d1.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n177" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p177" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/desserts/d2.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n178" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p178" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/desserts/d3.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n179" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p179" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/desserts/d4.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n180" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p180" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/desserts/d5.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n181" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p181" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/desserts/d6.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n182" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p182" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        
+                    </div>
+                    <h2 class="inner-content-title">飲料</h2>
+                    <div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/drinks/dr0.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n183" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p183" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/drinks/dr1.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n184" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p184" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/drinks/dr2.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n185" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p185" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/drinks/dr3.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n186" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p186" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/drinks/dr4.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n187" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p187" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        <div class="sushi-box">
+                            <div class="sushi">
+                                <img src="images/drinks/dr5.png"/>
+                            </div>
+                            <p class="sushi-name">
+                                    <asp:Label ID="n188" runat="server" ></asp:Label></p>
+                                <p class="sushi-price">
+                                    <asp:Label ID="p188" runat="server" ></asp:Label></p>
+                            <p class="new-product">&nbsp;</p>
+                        </div>
+                        
+                    </div>
+                </div>
             </section>
         </div>
+        <!-- End container -->
+
+        <!-- footer -->
+            <div id="footer">
+                    <div id="foot_cont">
+                        <div class="row">
+                            <div class="col-lg-4 foot_logo">
+                                <img class="foot_logo3" src="https://www.sushiro.com.tw/Content/images/LOGO.svg" />
+                                <div>
+                                    <img class="logo1" src="#" />
+                                    <img class="logo2" src="#" />
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="foot_menu_logo">
+                                    <a class="foot_logo4">立即訂位</a>
+                                    <div class="foot_icon">
+                                        <a href="https://page.line.me/sushiro.tw?openQrModal=true">
+                                            <img src="https://www.sushiro.com.tw/Content/images/line.svg" />
+                                        </a>
+                                        <a href="https://www.facebook.com/Sushiro.TW/">
+                                            <img src="https://www.sushiro.com.tw/Content/images/fb.svg" />
+                                        </a>
+                                        <a href="https://www.instagram.com/sushiro.tw/?hl=zh-tw">
+                                            <img src="https://www.sushiro.com.tw/Content/images/ig.svg" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="foot_menu_txt">
+                                    <a href="#">關於壽司郎</a>
+                                    <a href="#">店鋪一覽</a>
+                                    <a href="#">菜單</a>
+                                    <a href="#">人才招募</a>
+                                    <a href="#">店鋪募集</a>
+                                    <a href="#" title="服務時間：平日9-18點">聯絡我們</a>
+                                    <a href="#">常見問題</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- end footer -->
+              <!-- statment -->
+              <div id="statement">
+                    <div class="s_con">
+                        <p>© AKINDO SUSHIRO CO., LTD. ALL RIGHTS RESERVED.</p>
+                        <div class="s_con_right">
+                            <a class="scr_left" href="#">網站使用權須知 </a>
+                            <a href="#">隱私政策聲明</a>
+                        </div>
+                    </div>
+                </div>
+              <!-- end statement -->
     </form>
+
+        <!-- menu script -->
         <script>
-            var swiper = new Swiper(".mySwiper", {
+            var swiper = new Swiper(".hi", {
+                slidesPerView: 7,
+                spaceBetween: 0,
+                freeMode: false,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true
-                },
+                }
             });
 
+            $(window).resize(function () {
+
+                var sinWide = document.body.clientWidth;
+                var WideScreen = false;
+                if (sinWide <= 596) {
+                    var swiper = new Swiper(".hi", {
+                        slidesPerView: 3,
+                        spaceBetween: 0,
+                        freeMode: false,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true
+                        }
+                    });
+                }
+                else if (sinWide <= 970){
+                    var swiper = new Swiper(".hi", {
+                        slidesPerView: 4,
+                        spaceBetween: 0,
+                        freeMode: false,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true
+                        }
+                    });
+                }
+                else {
+                    var swiper = new Swiper(".hi", {
+                        slidesPerView: 7,
+                        spaceBetween: 0,
+                        freeMode: false,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true
+                        }
+                    });
+                }
+            });
         </script>
+        <!-- End menu script -->
 </body>
 </html>

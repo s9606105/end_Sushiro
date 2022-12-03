@@ -299,6 +299,286 @@ namespace Sushiro
             n95.Text = n.name[94];
             p95.Text = n.price[94];
 
+            n96.Text = n.name[95];
+            p96.Text = n.price[95];
+
+            n97.Text = n.name[96];
+            p97.Text = n.price[96];
+
+            n98.Text = n.name[97];
+            p98.Text = n.price[97];
+
+            n99.Text = n.name[98];
+            p99.Text = n.price[98];
+
+            n100.Text = n.name[99];
+            p100.Text = n.price[99];
+
+            n101.Text = n.name[100];
+            p101.Text = n.price[100];
+
+            n102.Text = n.name[101];
+            p102.Text = n.price[101];
+
+            n103.Text = n.name[102];
+            p103.Text = n.price[102];
+
+            n104.Text = n.name[103];
+            p104.Text = n.price[103];
+
+            n105.Text = n.name[104];
+            p105.Text = n.price[104];
+
+            n106.Text = n.name[105];
+            p106.Text = n.price[105];
+
+            n107.Text = n.name[106];
+            p107.Text = n.price[106];
+
+            n108.Text = n.name[107];
+            p108.Text = n.price[107];
+
+            n109.Text = n.name[108];
+            p109.Text = n.price[108];
+
+            n110.Text = n.name[109];
+            p110.Text = n.price[109];
+
+            n111.Text = n.name[110];
+            p111.Text = n.price[110];
+
+            n112.Text = n.name[111];
+            p112.Text = n.price[111];
+
+            n113.Text = n.name[112];
+            p113.Text = n.price[112];
+
+            n114.Text = n.name[113];
+            p114.Text = n.price[113];
+
+            n115.Text = n.name[114];
+            p115.Text = n.price[114];
+
+            n116.Text = n.name[115];
+            p116.Text = n.price[115];
+
+            n117.Text = n.name[116];
+            p117.Text = n.price[116];
+
+            n118.Text = n.name[117];
+            p118.Text = n.price[117];
+
+            n119.Text = n.name[118];
+            p119.Text = n.price[118];
+
+            n120.Text = n.name[119];
+            p120.Text = n.price[119];
+
+            n121.Text = n.name[120];
+            p121.Text = n.price[120];
+
+            n122.Text = n.name[121];
+            p122.Text = n.price[121];
+
+            n123.Text = n.name[122];
+            p123.Text = n.price[122];
+
+            n124.Text = n.name[123];
+            p124.Text = n.price[123];
+
+            n125.Text = n.name[124];
+            p125.Text = n.price[124];
+
+            n126.Text = n.name[125];
+            p126.Text = n.price[125];
+
+            n127.Text = n.name[126];
+            p127.Text = n.price[126];
+
+            n128.Text = n.name[127];
+            p128.Text = n.price[127];
+
+            n129.Text = n.name[128];
+            p129.Text = n.price[128];
+
+            n130.Text = n.name[129];
+            p130.Text = n.price[129];
+
+            n131.Text = n.name[130];
+            p131.Text = n.price[130];
+
+            n132.Text = n.name[131];
+            p132.Text = n.price[131];
+
+            n133.Text = n.name[132];
+            p133.Text = n.price[132];
+
+            n134.Text = n.name[133];
+            p134.Text = n.price[133];
+
+            n135.Text = n.name[134];
+            p135.Text = n.price[134];
+
+            n136.Text = n.name[135];
+            p136.Text = n.price[135];
+
+            n137.Text = n.name[136];
+            p137.Text = n.price[136];
+
+            n138.Text = n.name[137];
+            p138.Text = n.price[137];
+
+            n139.Text = n.name[138];
+            p139.Text = n.price[138];
+
+            n140.Text = n.name[139];
+            p140.Text = n.price[139];
+
+            n141.Text = n.name[140];
+            p141.Text = n.price[140];
+
+            n142.Text = n.name[141];
+            p142.Text = n.price[141];
+
+            n143.Text = n.name[142];
+            p143.Text = n.price[142];
+
+            n144.Text = n.name[143];
+            p144.Text = n.price[143];
+
+            n145.Text = n.name[144];
+            p145.Text = n.price[144];
+
+            n146.Text = n.name[145];
+            p146.Text = n.price[145];
+
+            n147.Text = n.name[146];
+            p147.Text = n.price[146];
+
+            n148.Text = n.name[147];
+            p148.Text = n.price[147];
+
+            n149.Text = n.name[148];
+            p149.Text = n.price[148];
+
+            n150.Text = n.name[149];
+            p150.Text = n.price[149];
+
+            n151.Text = n.name[150];
+            p151.Text = n.price[150];
+
+            n152.Text = n.name[151];
+            p152.Text = n.price[151];
+
+            n153.Text = n.name[152];
+            p153.Text = n.price[152];
+
+            n154.Text = n.name[153];
+            p154.Text = n.price[153];
+
+            n155.Text = n.name[154];
+            p155.Text = n.price[154];
+
+            n156.Text = n.name[155];
+            p156.Text = n.price[155];
+
+            n157.Text = n.name[156];
+            p157.Text = n.price[156];
+
+            n158.Text = n.name[157];
+            p158.Text = n.price[157];
+
+            n159.Text = n.name[158];
+            p159.Text = n.price[158];
+
+            n160.Text = n.name[159];
+            p160.Text = n.price[159];
+
+            n161.Text = n.name[160];
+            p161.Text = n.price[160];
+
+            n162.Text = n.name[161];
+            p162.Text = n.price[161];
+
+            n163.Text = n.name[162];
+            p163.Text = n.price[162];
+
+            n164.Text = n.name[163];
+            p164.Text = n.price[163];
+
+            n165.Text = n.name[164];
+            p165.Text = n.price[164];
+
+            n166.Text = n.name[165];
+            p166.Text = n.price[165];
+
+            n167.Text = n.name[166];
+            p167.Text = n.price[166];
+
+            n168.Text = n.name[167];
+            p168.Text = n.price[167];
+
+            n169.Text = n.name[168];
+            p169.Text = n.price[168];
+
+            n170.Text = n.name[169];
+            p170.Text = n.price[169];
+
+            n171.Text = n.name[170];
+            p171.Text = n.price[170];
+
+            n172.Text = n.name[171];
+            p172.Text = n.price[171];
+
+            n173.Text = n.name[172];
+            p173.Text = n.price[172];
+
+            n174.Text = n.name[173];
+            p174.Text = n.price[173];
+
+            n175.Text = n.name[174];
+            p175.Text = n.price[174];
+
+            n176.Text = n.name[175];
+            p176.Text = n.price[175];
+
+            n177.Text = n.name[176];
+            p177.Text = n.price[176];
+
+            n178.Text = n.name[177];
+            p178.Text = n.price[177];
+
+            n179.Text = n.name[178];
+            p179.Text = n.price[178];
+
+            n180.Text = n.name[179];
+            p180.Text = n.price[179];
+
+            n181.Text = n.name[180];
+            p181.Text = n.price[180];
+
+            n182.Text = n.name[181];
+            p182.Text = n.price[181];
+
+            n183.Text = n.name[182];
+            p183.Text = n.price[182];
+
+            n184.Text = n.name[183];
+            p184.Text = n.price[183];
+
+            n185.Text = n.name[184];
+            p185.Text = n.price[184];
+
+            n186.Text = n.name[185];
+            p186.Text = n.price[185];
+
+            n187.Text = n.name[186];
+            p187.Text = n.price[186];
+
+            n188.Text = n.name[187];
+            p188.Text = n.price[187];
+
+
 
         }
 
