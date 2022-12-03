@@ -415,7 +415,7 @@ ul > li > a:hover:after {
 .QA-inner-border-frame-noimg {
     font-weight: bold;
     padding: 5px 5px 10px 5px;
-    width: 90%;
+    width: 100%;
     border: 1px solid #e1e1e1;
     background-color: #f7f7f7;
     margin: 0 0 20px;
