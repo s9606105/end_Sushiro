@@ -8,7 +8,7 @@ div {
 }
 
 a {
-    text-decoration: none; /* 去超連結底線 */
+    text-decoration: none; /* �h�W�s�����u */
 }
 
 p {
@@ -50,9 +50,9 @@ p {
     display: flex;
 }
 
-#hp_menu > nav {
-    margin: auto;
-}
+    #hp_menu > nav {
+        margin: auto;
+    }
 
 #carousel {
     height: 720px;
@@ -85,9 +85,10 @@ p {
     margin: 0 auto;
     text-align: center;
 }
-#sub_ad{
-    padding:50px 0 65px;
-    background-color:#fff;
+
+#sub_ad {
+    padding: 50px 0 65px;
+    background-color: #fff;
     width: 100%;
 }
 
@@ -144,7 +145,7 @@ p {
     justify-content: space-between;
 }
 
-    .icon > a > img, .foot_icon > a > img{
+    .icon > a > img, .foot_icon > a > img {
         margin-left: 20px;
         height: 20px;
         width: 20px;
@@ -166,11 +167,11 @@ p {
     display: flex;
 }
 
-/* 顯示清單 */
-.navbar-nav li:hover > ul.dropdown-menu {
-    display: block;
-    border: none;
-}
+    /* ��ܲM�� */
+    .navbar-nav li:hover > ul.dropdown-menu {
+        display: block;
+        border: none;
+    }
 
 .navbar {
     height: 100%;
@@ -179,7 +180,7 @@ p {
 .dropdown-submenu {
     position: relative;
 }
-    /* 清單位置 */
+/* �M���m */
 .dropdown > .dropdown-menu {
     top: 100%;
     margin-top: -6px;
@@ -191,7 +192,7 @@ li > a {
 
 ul > li > a:hover:after {
     transform: rotate(-180deg);
-    transition: 1s; /* 旋轉時間 */
+    transition: 1s; /* ����ɶ� */
 }
 
 .nav-link::after {
@@ -216,18 +217,18 @@ ul > li > a:hover:after {
 }
 
 .menu_btn {
-    width:132.857px;
-    margin-right:30px;
-    text-align:center;
-    line-height:24px;
-    letter-spacing:3px;
+    width: 132.857px;
+    margin-right: 30px;
+    text-align: center;
+    line-height: 24px;
+    letter-spacing: 3px;
 }
 
 .menu_btn_img {
-    height:40px;
-    width:40px;
-    display:block;
-    margin:0 auto;
+    height: 40px;
+    width: 40px;
+    display: block;
+    margin: 0 auto;
 }
 
 .manu_change {
@@ -245,13 +246,14 @@ ul > li > a:hover:after {
 .title01 {
     margin: 0 auto;
     margin-bottom: 40px;
-    width:55px;
-    font-size:26px;
+    width: 55px;
+    font-size: 26px;
     border-bottom: 2px solid #a70719;
 }
+
 .sub_ani {
-    height:468px;
-    width:1140px;
+    height: 468px;
+    width: 1140px;
     margin: 0 auto;
 }
 
@@ -306,7 +308,7 @@ ul > li > a:hover:after {
 }
 
 .sub_ani_ad {
-    display: flex; /* 控制框內物件並排 */
+    display: flex; /* ����ؤ�����ñ� */
 }
 
 .foot_logo {
@@ -371,6 +373,309 @@ ul > li > a:hover:after {
     margin: 0 5px 0 10px;
 }
 
+/* QA*/
+.QA-inner-content-title {
+    font-weight: 100;
+    font-size: 26px;
+    line-height: 24px;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    display: inline-block;
+    padding: 0 0 5px;
+    border-bottom: 4px solid #a70719;
+    font-weight: bold;
+    margin-right: auto;
+    
+}
+
+.QA-content-frame {
+    padding: 50px 0 65px;
+}
+
+.QA-container {
+    width: 100%;
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.QA-h2 {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    outline: 0;
+}
+
+.QA-inner-border-frame-noimg {
+    font-weight: bold;
+    padding: 5px 5px 10px 5px;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    background-color: #f7f7f7;
+    margin: 0 0 20px;
+}
+
+.QA-inner-border-frame-noimg .QA-inner-border-frame-noimg-title {
+    font-weight: bold;
+    background-color: #a70719;
+    color: #ffffff;
+    padding: 22px 20px;
+    line-height: 24px;
+
+}
+
+.QA-inner-border-frame-noimg .QA-inner-border-frame-noimg-font {
+    font-weight: bold;
+    padding: 20px;
+    font-size: 18px;
+}
+
+/* Menu*/
+.title-frame-content {
+    display: flex;
+    align-items: center;
+    height: 130px;
+    background-color: #f7f7f7;
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.inner-menu {
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    padding: 15px 0;
+    z-index: 9;
+    border-bottom: 2px solid #f7f7f7;
+    box-shadow: 0 2px 5px #f7f7f7;
+    margin: 0;
+}
+
+.menu-content-frame {
+    padding: 50px 0 65px;
+}
+
+.swiper-index-menu {
+    overflow: hidden;
+    padding: 0 0 20px;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.swiper-container-pointer-events {
+    touch-action: pan-y;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+}
+
+.swiper-index-menu .swiper-slide span {
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    background-color: #a70719;
+    color: #ffffff;
+    padding: 8px 13px 12px;
+    border-radius: 50px;
+    border: 0;
+}
+
+.swiper-index-menu .swiper-slide {
+    font-weight: inherit;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+    .swiper-index-menu .swiper-slide img {
+        width: 40px;
+        height: 40px;
+        display: block;
+        margin: 0 auto 15px;
+    }
+
+.menu-section {
+    display: block;
+}
+
+.background-menu-title {
+    background-color: #f7f7f7;
+    background-image: url("../images/icon/service-bg.svg");
+    background-repeat: repeat;
+    background-size: 343px 243px;
+    background-attachment: fixed;
+    margin: 0 0 50px;
+}
+
+    .background-menu-title h2 {
+        font-weight: 100;
+        font-size: 26px;
+        line-height: 24px;
+        letter-spacing: 3px;
+        margin-bottom: 40px;
+        display: inline-block;
+        padding: 0 0 5px;
+        border-bottom: 4px solid #a70719;
+        margin-bottom: 0;
+        border: 0;
+        display: flex;
+        align-items: center;
+        height: 120px;
+        letter-spacing: 0;
+    }
+
+.font-16 {
+    font-size: 16px;
+}
+
+.iconimg {
+    height: 40px;
+    width: 40px;
+}
+
+.inner-content-title {
+    font-weight: 100;
+    font-size: 26px;
+    line-height: 24px;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    display: inline-block;
+    padding: 0 0 5px;
+    border-bottom: 4px solid #a70719;
+}
+
+.sushi-box {
+    text-align: center;
+    display: inline-block;
+    width: calc(100% / 4 - 3px);
+    margin-bottom: 50px;
+}
+
+    .sushi-box .sushi {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background-color: #f7f7f7;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 auto 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+    }
+
+        .sushi-box .sushi img {
+            width: 100%;
+        }
+
+        .sushi-box .sushi .limited {
+            position: absolute;
+            bottom: 0;
+            right: -20px;
+            width: 70px;
+        }
+
+
+
+.sushi-frame .sushi-box .sushi-name, .sushi-frame .sushi-box .sushi-price {
+    font-size: 20px;
+}
+
+p {
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+
+.w12 {
+    width: 1140px;
+}
+
+/* ContactUs*/
+.contact-frame {
+    padding:30px 30px 50px;
+}
+.background-color-gray {
+    background-color: #f7f7f7;
+}
+
+.red-star {
+    color: #a70719;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 30px;
+    align-items: center;
+}
+.col-label {
+    padding-top: calc(0.375rem + 1px);
+    padding-bottom: calc(0.375rem + 1px);
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: 1.5;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-sm-2, .col-sm-4 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+
 /*********************************************************************************************************/
 /* media */
 @media (min-width: 1200px) {
@@ -378,3 +683,33 @@ ul > li > a:hover:after {
         width: 1140px;
     }
 }
+
+@media (max-width: 991px) {
+    .sushi-box .sushi {
+        width: 150px;
+        height: 150px;
+        background-size: cover;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .sushi-box {
+        width: calc(100% / 2 - 3px);
+    }
+}
+
+@media (min-width: 576px) {
+    .col-sm-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+
+    .col-sm-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
