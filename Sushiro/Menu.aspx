@@ -71,7 +71,7 @@
                                 <li><a class="nav-link" href="#">人才招募</a></li>
                                 <li><a class="nav-link" href="#">店鋪募集</a></li>
                                 <li><a class="nav-link" href="QA.aspx">常見問題</a></li>
-                                <li><a class="nav-link" href="#">聯絡我們</a></li>
+                                <li><a class="nav-link" href="ContactUs.aspx">聯絡我們</a></li>
                             </ul>
                         </div>
                     </nav>
