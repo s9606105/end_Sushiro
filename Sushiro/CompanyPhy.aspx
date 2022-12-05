@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="main.aspx.cs" Inherits="Sushiro.main" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CompanyPhy.aspx.cs" Inherits="Sushiro.CompanyPhy" %>
 
 <!DOCTYPE html>
 

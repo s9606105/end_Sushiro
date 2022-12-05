@@ -269,10 +269,10 @@
     <Content Include="images\warship\w7.png" />
     <Content Include="images\warship\w8.png" />
     <Content Include="images\warship\w9.png" />
+    <Content Include="Main.aspx" />
     <Content Include="Menu.aspx" />
     <Content Include="QA.aspx" />
     <Content Include="style.css" />
-    <Content Include="main.aspx" />
     <Content Include="style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -293,6 +293,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
     </Compile>
     <Compile Include="Menu.aspx.cs">
       <DependentUpon>Menu.aspx</DependentUpon>

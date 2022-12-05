@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="main.aspx.cs" Inherits="Sushiro.main" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="Sushiro.Main" %>
 
 <!DOCTYPE html>
 
@@ -17,8 +17,8 @@
             <div id="header">
                 <div id="layout">
                     <div id="d_c1">
-                        <img class="logo1" src="" />
-                        <img class="logo2" src="" />
+                        <img class="logo1" src="#" />
+                        <img class="logo2" src="#" />
                     </div>
                     <div id="d_c2">
                         <div id="it01">
@@ -61,11 +61,11 @@
                                     </ul>
                                 </li>
                                 <li><a class="nav-link" href="#">店鋪一覽</a></li>
-                                <li><a class="nav-link" href="#">菜單</a></li>
+                                <li><a class="nav-link" href="Menu.aspx">菜單</a></li>
                                 <li><a class="nav-link" href="#">人才招募</a></li>
                                 <li><a class="nav-link" href="#">店鋪募集</a></li>
-                                <li><a class="nav-link" href="#">常見問題</a></li>
-                                <li><a class="nav-link" href="#">聯絡我們</a></li>
+                                <li><a class="nav-link" href="QA.aspx">常見問題</a></li>
+                                <li><a class="nav-link" href="ContactUs.aspx">聯絡我們</a></li>
                             </ul>
                         </div>
                     </nav>
