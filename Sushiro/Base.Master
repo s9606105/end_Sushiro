@@ -17,7 +17,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     </asp:ContentPlaceHolder>
 </head>
-<body>
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" data-new-gr-c-s-check-loaded="14.1026.0">
     <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="body_header" runat="server">
@@ -47,7 +47,7 @@
                     <!-- end layout -->
                     <div id="hp_menu">
                         <nav class="navbar navbar-expand-lg">
-                            <a href="https://www.sushiro.com.tw/" class="logo-frame">
+                            <a href="Main.aspx" class="logo-frame">
                                 <img class="logo3" src="https://www.sushiro.com.tw/Content/images/LOGO.svg" />
                             </a>
                             <!-- RWD button -->
@@ -63,13 +63,13 @@
                                         <!-- 下拉式選項 -->
                                         <ul class="dropdown-menu">
                                             <li class="dropdown-submenu"><a class="dropdown-item" href="CompanyPhy.aspx">公司理念</a></li>
-                                            <li class="dropdown-submenu"><a class="dropdown-item" href="#">點餐說明</a></li>
-                                            <li class="dropdown-submenu"><a class="dropdown-item" href="#">集點卡相關</a></li>
+                                            <li class="dropdown-submenu"><a class="dropdown-item" href="Order.aspx">點餐說明</a></li>
+                                            <li class="dropdown-submenu"><a class="dropdown-item" href="Card.aspx">集點卡相關</a></li>
                                         </ul>
                                     </li>
                                     <li><a class="nav-link" href="#">店鋪一覽</a></li>
                                     <li><a class="nav-link" href="Menu.aspx">菜單</a></li>
-                                    <li><a class="nav-link" href="#">人才招募</a></li>
+                                    <li><a class="nav-link" href="Recruiting.aspx">人才招募</a></li>
                                     <li><a class="nav-link" href="#">店鋪募集</a></li>
                                     <li><a class="nav-link" href="QA.aspx">常見問題</a></li>
                                     <li><a class="nav-link" href="ContactUs.aspx">聯絡我們</a></li>
@@ -83,6 +83,11 @@
                 <!-- end header -->
             </asp:ContentPlaceHolder>
             <asp:ContentPlaceHolder ID="body_container" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="backTop" runat="server">
+                <a id="back-to-top" class="back-to-top" href="#" role="button" style="">
+                    <span>TOP</span>
+                </a>
             </asp:ContentPlaceHolder>
             <asp:ContentPlaceHolder ID="body_footer" runat="server">
                 <div id="footer">
@@ -111,13 +116,13 @@
                                     </div>
                                 </div>
                                 <div class="foot_menu_txt">
-                                    <a href="#">關於壽司郎</a>
+                                    <a href="CompanyPhy.aspx">關於壽司郎</a>
                                     <a href="#">店鋪一覽</a>
-                                    <a href="#">菜單</a>
-                                    <a href="#">人才招募</a>
+                                    <a href="Menu.aspx">菜單</a>
+                                    <a href="Recruiting.aspx">人才招募</a>
                                     <a href="#">店鋪募集</a>
-                                    <a href="#" title="服務時間：平日9-18點">聯絡我們</a>
-                                    <a href="#">常見問題</a>
+                                    <a href="ContactUs.aspx" title="服務時間：平日9-18點">聯絡我們</a>
+                                    <a href="QA.aspx">常見問題</a>
                                 </div>
                             </div>
                         </div>
