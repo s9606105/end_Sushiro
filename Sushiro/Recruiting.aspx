@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Base.Master" AutoEventWireup="true" CodeBehind="Recruiting.aspx.cs" Inherits="Sushiro.Recruiting" %>
+﻿<%@ Page Title="人才招募 - 台湾スシロー 台灣壽司郎" Language="C#" MasterPageFile="~/Base.Master" AutoEventWireup="true" CodeBehind="Recruiting.aspx.cs" Inherits="Sushiro.Recruiting" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="body_container" runat="server">
     <div id="content">

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Base.Master" AutoEventWireup="true" CodeBehind="Card.aspx.cs" Inherits="Sushiro.Card" %>
+﻿<%@ Page Title="關於壽司郎 – 集點卡相關 - 台湾スシロー 台灣壽司郎" Language="C#" MasterPageFile="~/Base.Master" AutoEventWireup="true" CodeBehind="Card.aspx.cs" Inherits="Sushiro.Card" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="body_container" runat="server">
     <div id="content">
