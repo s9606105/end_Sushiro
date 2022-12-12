@@ -79,6 +79,18 @@ namespace Sushiro
             }
         }
 
+        protected void b_send_Click(object sender, EventArgs e)
+        {
 
+            //判斷驗證碼是否正確
+            if (tb_Code.Text == HiddenField1.Value)
+            {
+                tb_Code.Text = "ok";
+            }
+            else
+            {
+                tb_Code.Text = "not ok";
+            }
+        }
     }
 }

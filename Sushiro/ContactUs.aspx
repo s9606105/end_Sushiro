@@ -17,12 +17,7 @@
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous" />
-    <style>
-        #mycanvas {
-            cursor: pointer;
-            text-align: center
-        }
-    </style>
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -229,6 +224,7 @@
                                 <div>
 
                                     <canvas id="mycanvas" width='150' height='40'></canvas>
+                                    <asp:HiddenField ID="HiddenField1" runat="server" Value="" />
                                 </div>
                             </div>
 
@@ -245,12 +241,13 @@
                         <div class="d-flex justify-content-center row">
 
                             <asp:Button ID="b_Cancel" runat="server" Text="取消" CssClass="button-normal btn btn-outline-secondary" />
-                            <asp:Button ID="b_send" type="submit" runat="server" Text="送出" CssClass="button-normal button-change-color" />
+                            <asp:Button ID="b_send" type="submit" runat="server" Text="送出" CssClass="button-normal button-change-color" OnClick="b_send_Click" />
 
                         </div>
 
                     </div>
                 </div>
+
 
             </div>
 
@@ -430,9 +427,11 @@
             validate += arr[ranNum];
         }
 
+        document.getElementById("HiddenField1").value = validate;
         //alert("rand() "+validate);
         //alert("rand() "+typeof(validate));
         return validate;
+        
     }
 
     /*干擾線的隨機x坐標值*/
@@ -524,9 +523,9 @@
     myvad.addEventListener("click", function (e) {
         if (document.getElementById("tb_Code").value == validate) {
             if (CheckBox1.checked) {
-                if (document.getElementById("tb_Name").value != "") {
-                    if (document.getElementById("tb_Number").value != "") {
-                        if (document.getElementById("tb_email").value != "") {
+                if (document.getElementById("tb_Name").value != "" && document.getElementById("tb_Name").value != "您的姓名") {
+                    if (document.getElementById("tb_Number").value != "" && document.getElementById("tb_Number").value != "市話手機皆可") {
+                        if (document.getElementById("tb_email").value != "" && document.getElementById("tb_email").value != "輸入電子信箱") {
                             alert("感謝您的回饋!");
                         }
                         else {
