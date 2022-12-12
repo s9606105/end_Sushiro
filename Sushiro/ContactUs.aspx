@@ -243,8 +243,8 @@
                         </div>
 
                         <div class="d-flex justify-content-center row">
-                            
-                            <asp:Button ID="b_Cancel" runat="server"  Text="取消" CssClass="button-normal btn btn-outline-secondary" />
+
+                            <asp:Button ID="b_Cancel" runat="server" Text="取消" CssClass="button-normal btn btn-outline-secondary" />
                             <asp:Button ID="b_send" type="submit" runat="server" Text="送出" CssClass="button-normal button-change-color" />
 
                         </div>
