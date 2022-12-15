@@ -1,24 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml.Linq;
+using System.Data;
+using System.Drawing.Printing;
 
 namespace Sushiro
 {
     public partial class ContactUs : System.Web.UI.Page
     {
-        string[] s_Subject = new string[4] { "意見反饋" , "合作洽詢", "店鋪募集洽詢", "其他" };
-        string[] s_City = new string[10] {"選擇縣市","台南市","台北市","台中市","彰化縣","新竹市","新北市","高雄市","桃園市","宜蘭縣"};
+        string[] s_Subject = new string[4] { "意見反饋", "合作洽詢", "店鋪募集洽詢", "其他" };
+        string[] s_City = new string[10] { "選擇縣市", "台南市", "台北市", "台中市", "彰化縣", "新竹市", "新北市", "高雄市", "桃園市", "宜蘭縣" };
         string[][] s_Store = new string[10][];
 
-        
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
 
             s_Store[0] = new string[1] { "選擇分店" };
             s_Store[1] = new string[4] { "台南南紡店", "台南安平店", "台南西門路店", "台南永康店" };
@@ -33,10 +37,10 @@ namespace Sushiro
             if (!IsPostBack)
             {
 
-                for (int i=0;i<s_Subject.Length;i++)
+                for (int i = 0; i < s_Subject.Length; i++)
                 {
                     ListItem l = new ListItem();
-                    l.Text = l.Value =s_Subject[i]; 
+                    l.Text = l.Value = s_Subject[i];
                     dpl_Subject.Items.Add(l);
                 }
 
@@ -49,18 +53,20 @@ namespace Sushiro
                 mt_getselect();
 
             }
-            
+
+
+
         }
 
         protected void dpl_Subject_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (dpl_Subject.SelectedIndex == 0)
             {
-                Panel1.Visible= true;
+                Panel1.Visible = true;
             }
             else
             {
-                Panel1.Visible= false;
+                Panel1.Visible = false;
             }
         }
         protected void dpl_City_SelectedIndexChanged(object sender, EventArgs e)
@@ -72,13 +78,109 @@ namespace Sushiro
             int i_index = dpl_City.SelectedIndex;
             dpl_Store.Items.Clear();
 
-            for (int i = 0; i < s_Store[i_index].GetLength(0);i++) { 
+            for (int i = 0; i < s_Store[i_index].GetLength(0); i++)
+            {
                 ListItem l = new ListItem();
                 l.Text = l.Value = s_Store[i_index][i];
                 dpl_Store.Items.Add(l);
             }
         }
 
+        protected void b_send_Click(object sender, EventArgs e)
+        {
 
+            //判斷驗證碼是否正確
+            if (tb_Code.Text == HiddenField1.Value)
+            {
+
+                if (dpl_Subject.Text == "意見反饋")
+                {
+                    SqlConnection o_conn = new SqlConnection(
+                    ConfigurationManager.ConnectionStrings["MyCon"].ConnectionString);
+                    o_conn.Open();
+                    SqlDataAdapter o_a = new SqlDataAdapter("select * from contact", o_conn);
+                    SqlCommand o_cmd = new SqlCommand("Insert into contact (name,sex,number,email," +
+                        "contact,point,store,date,time,tablenum,content)" +
+                        "values(@Name,@Sex,@Number,@Email,@Contact,@Point,@Store,@Date,@Time,@Tablenum,@Content)", o_conn
+                        );
+                    o_cmd.Parameters.Add("@Name", SqlDbType.NVarChar, 15);
+                    o_cmd.Parameters["@Name"].Value = tb_Name.Text;
+                    o_cmd.Parameters.Add("@Sex", SqlDbType.NVarChar, 10);
+                    o_cmd.Parameters["@Sex"].Value = RadioButtonList1.Text;
+                    o_cmd.Parameters.Add("@Number", SqlDbType.NVarChar, 10);
+                    o_cmd.Parameters["@Number"].Value = tb_Number.Text;
+                    o_cmd.Parameters.Add("@Email", SqlDbType.NVarChar, 50);
+                    o_cmd.Parameters["@Email"].Value = tb_email.Text;
+                    o_cmd.Parameters.Add("@Contact", SqlDbType.NVarChar, 10);
+                    o_cmd.Parameters["@Contact"].Value = RadioButtonList2.Text;
+                    o_cmd.Parameters.Add("@Point", SqlDbType.NVarChar, 10);
+                    o_cmd.Parameters["@Point"].Value = dpl_Subject.Text;
+                    o_cmd.Parameters.Add("@Store", SqlDbType.NVarChar, 10);
+                    if (dpl_Store.Text == "") { o_cmd.Parameters["@Store"].Value = "0"; }
+                    else { o_cmd.Parameters["@Store"].Value = dpl_Store.Text; }
+                    o_cmd.Parameters.Add("@Date", SqlDbType.NVarChar, 15);
+                    if (datepicker.Text == "") { o_cmd.Parameters["@Date"].Value = "0"; }
+                    else { o_cmd.Parameters["@Date"].Value = datepicker.Text; }
+                    o_cmd.Parameters.Add("@Time", SqlDbType.NVarChar, 15);
+                    if(timepicker.Text== "") { o_cmd.Parameters["@Time"].Value = "0"; }
+                    else { o_cmd.Parameters["@Time"].Value = timepicker.Text; }
+                    o_cmd.Parameters.Add("@Tablenum", SqlDbType.Int);
+                    if(tb_Tablenum.Text == "") { o_cmd.Parameters["@Tablenum"].Value = "0"; }
+                    else { o_cmd.Parameters["@Tablenum"].Value = tb_Tablenum.Text; }
+                    o_cmd.Parameters.Add("@Content", SqlDbType.NVarChar, 50);
+                    if (txtContent.Text == ""){o_cmd.Parameters["@Content"].Value = " ";}
+                    else { o_cmd.Parameters["@Content"].Value = txtContent.Text; }
+                    o_cmd.ExecuteNonQuery();
+                    Response.Redirect("https://localhost:44306/ContactUs.aspx", false);
+                    HttpContext.Current.ApplicationInstance.CompleteRequest();
+                    o_conn.Close();
+
+                }
+                else
+                {
+                    SqlConnection o_conn = new SqlConnection(
+                        ConfigurationManager.ConnectionStrings["MyCon"].ConnectionString);
+                    o_conn.Open();
+                    SqlDataAdapter o_a = new SqlDataAdapter("select * from contact", o_conn);
+                    SqlCommand o_cmd = new SqlCommand("Insert into contact (name,sex,number,email," +
+                        "contact,point,store,date,time,tablenum,content)" +
+                        "values(@Name,@Sex,@Number,@Email,@Contact,@Point,@Store,@Date,@Time,@Tablenum,@Content)", o_conn
+                        );
+                    o_cmd.Parameters.Add("@Name", SqlDbType.NVarChar, 15);
+                    o_cmd.Parameters["@Name"].Value = tb_Name.Text;
+                    o_cmd.Parameters.Add("@Sex", SqlDbType.NVarChar, 10);
+                    o_cmd.Parameters["@Sex"].Value = RadioButtonList1.Text;
+                    o_cmd.Parameters.Add("@Number", SqlDbType.NVarChar, 10);
+                    o_cmd.Parameters["@Number"].Value = tb_Number.Text;
+                    o_cmd.Parameters.Add("@Email", SqlDbType.NVarChar, 50);
+                    o_cmd.Parameters["@Email"].Value = tb_email.Text;
+                    o_cmd.Parameters.Add("@Contact", SqlDbType.NVarChar, 10);
+                    o_cmd.Parameters["@Contact"].Value = RadioButtonList2.Text;
+                    o_cmd.Parameters.Add("@Point", SqlDbType.NVarChar, 10);
+                    o_cmd.Parameters["@Point"].Value = dpl_Subject.Text;
+                    o_cmd.Parameters.Add("@Store", SqlDbType.NVarChar, 10);
+                    if (dpl_Store.Text == "") { o_cmd.Parameters["@Store"].Value = "0"; }
+                    else { o_cmd.Parameters["@Store"].Value = dpl_Store.Text; }
+                    o_cmd.Parameters.Add("@Date", SqlDbType.NVarChar, 15);
+                    if (datepicker.Text == "") { o_cmd.Parameters["@Date"].Value = "0"; }
+                    else { o_cmd.Parameters["@Date"].Value = datepicker.Text; }
+                    o_cmd.Parameters.Add("@Time", SqlDbType.NVarChar, 15);
+                    if (timepicker.Text == "") { o_cmd.Parameters["@Time"].Value = "0"; }
+                    else { o_cmd.Parameters["@Time"].Value = timepicker.Text; }
+                    o_cmd.Parameters.Add("@Tablenum", SqlDbType.Int);
+                    if (tb_Tablenum.Text == "") { o_cmd.Parameters["@Tablenum"].Value = "0"; }
+                    else { o_cmd.Parameters["@Tablenum"].Value = tb_Tablenum.Text; }
+                    o_cmd.Parameters.Add("@Content", SqlDbType.NVarChar, 50);
+                    if (txtContent.Text == "") { o_cmd.Parameters["@Content"].Value = "0"; }
+                    else { o_cmd.Parameters["@Content"].Value = txtContent.Text; }
+
+                    o_cmd.ExecuteNonQuery();
+                    Response.Redirect("https://localhost:44306/ContactUs.aspx", false);
+                    HttpContext.Current.ApplicationInstance.CompleteRequest();
+                    o_conn.Close();
+                   
+                }
+            }
+        }
     }
 }

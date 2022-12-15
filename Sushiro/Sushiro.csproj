@@ -73,6 +73,7 @@
     <Content Include="Card.aspx" />
     <Content Include="ContactUs.aspx" />
     <Content Include="CompanyPhy.aspx" />
+    <Content Include="ContactUs.aspx" />
     <Content Include="Global.asax" />
     <Content Include="images\desserts\d0.png" />
     <Content Include="images\desserts\d1.png" />
@@ -271,11 +272,13 @@
     <Content Include="images\warship\w8.png" />
     <Content Include="images\warship\w9.png" />
     <Content Include="Main.aspx" />
+    <Content Include="login.aspx" />
     <Content Include="Menu.aspx" />
     <Content Include="Order.aspx" />
     <Content Include="QA.aspx" />
     <Content Include="Recruiting.aspx" />
     <Content Include="style.css" />
+    <Content Include="main.aspx" />
     <Content Include="style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -293,6 +296,13 @@
     </Compile>
     <Compile Include="Card.aspx.designer.cs">
       <DependentUpon>Card.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
     </Compile>
     <Compile Include="CompanyPhy.aspx.cs">
       <DependentUpon>CompanyPhy.aspx</DependentUpon>
@@ -317,6 +327,13 @@
     </Compile>
     <Compile Include="Main.aspx.designer.cs">
       <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Menu.aspx.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
