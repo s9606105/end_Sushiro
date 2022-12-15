@@ -50,9 +50,9 @@ p {
     display: flex;
 }
 
-    #hp_menu > nav {
-        margin: auto;
-    }
+#hp_menu > nav {
+    margin: auto;
+}
 
 #carousel {
     height: 720px;
@@ -167,11 +167,11 @@ p {
     display: flex;
 }
 
-    /* 顯示清單 */
-    .navbar-nav li:hover > ul.dropdown-menu {
-        display: block;
-        border: none;
-    }
+/* 顯示清單 */
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+    border: none;
+}
 
 .navbar {
     height: 100%;
@@ -180,7 +180,7 @@ p {
 .dropdown-submenu {
     position: relative;
 }
-/* 清單位置 */
+    /* 清單位置 */
 .dropdown > .dropdown-menu {
     top: 100%;
     margin-top: -6px;

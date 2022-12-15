@@ -70,6 +70,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CompanyPhy.aspx" />
     <Content Include="ContactUs.aspx" />
     <Content Include="Global.asax" />
     <Content Include="images\desserts\d0.png" />
@@ -272,6 +273,8 @@
     <Content Include="Menu.aspx" />
     <Content Include="QA.aspx" />
     <Content Include="style.css" />
+    <Content Include="main.aspx" />
+    <Content Include="style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -281,6 +284,13 @@
     </Compile>
     <Compile Include="ContactUs.aspx.designer.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyPhy.aspx.cs">
+      <DependentUpon>CompanyPhy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyPhy.aspx.designer.cs">
+      <DependentUpon>CompanyPhy.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
