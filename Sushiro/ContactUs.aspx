@@ -71,7 +71,7 @@
                                 </li>
                                 <li><a class="nav-link" href="#">店鋪一覽</a></li>
                                 <li><a class="nav-link" href="Menu.aspx">菜單</a></li>
-                                <li><a class="nav-link" href="#">人才招募</a></li>
+                                <li><a class="nav-link" href="Recruiting.aspx">人才招募</a></li>
                                 <li><a class="nav-link" href="#">店鋪募集</a></li>
                                 <li><a class="nav-link" href="QA.aspx">常見問題</a></li>
                                 <li><a class="nav-link" href="ContactUs.aspx">聯絡我們</a></li>
@@ -250,9 +250,9 @@
 
 
             </div>
-
-
-
+            <a id="back-to-top" class="back-to-top" href="#" role="button" style="">
+                    <span>TOP</span>
+                </a>
             <!-- End content -->
             <!-- footer -->
             <div id="footer">
@@ -281,13 +281,14 @@
                                 </div>
                             </div>
                             <div class="foot_menu_txt">
-                                <a href="#">關於壽司郎</a>
+                                <a href="CompanyPhy.aspx">關於壽司郎</a>
                                 <a href="#">店鋪一覽</a>
-                                <a href="#">菜單</a>
-                                <a href="#">人才招募</a>
+                                <a href="Menu.aspx">菜單</a>
+                                <a href="Recruiting.aspx">人才招募</a>
                                 <a href="#">店鋪募集</a>
-                                <a href="#" title="服務時間：平日9-18點">聯絡我們</a>
-                                <a href="#">常見問題</a>
+                                <a href="ContactUs.aspx" title="服務時間：平日9-18點">聯絡我們</a>
+                                <a href="QA.aspx">常見問題</a>
+                                <a href="login.aspx">後臺管理</a>
                             </div>
                         </div>
                     </div>
@@ -431,7 +432,7 @@
         //alert("rand() "+validate);
         //alert("rand() "+typeof(validate));
         return validate;
-        
+
     }
 
     /*干擾線的隨機x坐標值*/

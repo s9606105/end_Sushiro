@@ -90,7 +90,7 @@ namespace Sushiro
         {
 
             //判斷驗證碼是否正確
-            if (tb_Code.Text == HiddenField1.Value)
+            if (tb_Code.Text == HiddenField1.Value && (tb_Name.Text != "" && tb_Name.Text != "您的姓名") && (tb_Number.Text != "" && tb_Number.Text != "市話手機皆可") && (tb_email.Text != "" && tb_email.Text != "輸入電子信箱") && CheckBox1.Checked == true)
             {
 
                 if (dpl_Subject.Text == "意見反饋")

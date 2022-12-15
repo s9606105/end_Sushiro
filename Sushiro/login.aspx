@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="shortcut icon" href="https://www.sushiro.com.tw/Content/images/favicon.ico" />
@@ -71,7 +71,7 @@
                                 </li>
                                 <li><a class="nav-link" href="#">店鋪一覽</a></li>
                                 <li><a class="nav-link" href="Menu.aspx">菜單</a></li>
-                                <li><a class="nav-link" href="#">人才招募</a></li>
+                                <li><a class="nav-link" href="Recruiting.aspx">人才招募</a></li>
                                 <li><a class="nav-link" href="#">店鋪募集</a></li>
                                 <li><a class="nav-link" href="QA.aspx">常見問題</a></li>
                                 <li><a class="nav-link" href="ContactUs.aspx">聯絡我們</a></li>
@@ -92,25 +92,25 @@
             <!-- content -->
             <div class="menu-content-frame">
                 <div class="container w12">
-                    <div class ="login-container">
+                    <div class="login-container">
                         <asp:Panel ID="Panel2" runat="server">
                             <div class="login-div" style="width: 230px;">
-                            <asp:Label ID="l_Id" runat="server" Text="帳號"></asp:Label>
-                            <asp:TextBox ID="tb_Id" runat="server"></asp:TextBox>
-                        </div>
+                                <asp:Label ID="l_Id" runat="server" Text="帳號"></asp:Label>
+                                <asp:TextBox ID="tb_Id" runat="server"></asp:TextBox>
+                            </div>
 
-                        <div class="login-div" style="width: 230px;">
-                            <asp:Label ID="l_Password" runat="server" Text="密碼"></asp:Label>
-                            <asp:TextBox ID="tb_Password" runat="server"></asp:TextBox>
-                        </div>
-                        <div class ="login-div" style="width: 230px;">
+                            <div class="login-div" style="width: 230px;">
+                                <asp:Label ID="l_Password" runat="server" Text="密碼"></asp:Label>
+                                <asp:TextBox ID="tb_Password" runat="server"></asp:TextBox>
+                            </div>
+                            <div class="login-div" style="width: 230px;">
 
-                            <asp:Label id="hint" runat="server" style="color:red;" Visible="False">帳號或密碼錯誤</asp:Label>
-                        </div>
-                        <asp:Button class="login-div" ID="b_login" runat="server" Text="登入" OnClick="b_login_Click" />
+                                <asp:Label ID="hint" runat="server" Style="color: red;" Visible="False">帳號或密碼錯誤</asp:Label>
+                            </div>
+                            <asp:Button class="login-div" ID="b_login" runat="server" Text="登入" OnClick="b_login_Click" />
 
                         </asp:Panel>
-                        
+
 
                         <asp:Panel ID="Panel1" runat="server" Visible="False" CssClass="login-div">
                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ContactUsConnectionString7 %>" DeleteCommand="DELETE FROM [contact] WHERE [ID] = @ID" InsertCommand="INSERT INTO [contact] ([name], [sex], [number], [email], [contact], [point], [store], [date], [time], [tablenum], [content]) VALUES (@name, @sex, @number, @email, @contact, @point, @store, @date, @time, @tablenum, @content)" SelectCommand="SELECT * FROM [contact]" UpdateCommand="UPDATE [contact] SET [name] = @name, [sex] = @sex, [number] = @number, [email] = @email, [contact] = @contact, [point] = @point, [store] = @store, [date] = @date, [time] = @time, [tablenum] = @tablenum, [content] = @content WHERE [ID] = @ID">
@@ -197,13 +197,14 @@
                                 </div>
                             </div>
                             <div class="foot_menu_txt">
-                                <a href="#">關於壽司郎</a>
+                                <a href="CompanyPhy.aspx">關於壽司郎</a>
                                 <a href="#">店鋪一覽</a>
-                                <a href="#">菜單</a>
-                                <a href="#">人才招募</a>
+                                <a href="Menu.aspx">菜單</a>
+                                <a href="Recruiting.aspx">人才招募</a>
                                 <a href="#">店鋪募集</a>
-                                <a href="#" title="服務時間：平日9-18點">聯絡我們</a>
-                                <a href="#">常見問題</a>
+                                <a href="ContactUs.aspx" title="服務時間：平日9-18點">聯絡我們</a>
+                                <a href="QA.aspx">常見問題</a>
+                                <a href="login.aspx">後臺管理</a>
                             </div>
                         </div>
                     </div>

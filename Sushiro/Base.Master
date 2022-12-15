@@ -15,6 +15,14 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.css" />
         <script type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+        <link rel="stylesheet" href="/resources/demos/style.css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous" />
+
+
     </asp:ContentPlaceHolder>
 </head>
 <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" data-new-gr-c-s-check-loaded="14.1026.0">
@@ -123,6 +131,7 @@
                                     <a href="#">店鋪募集</a>
                                     <a href="ContactUs.aspx" title="服務時間：平日9-18點">聯絡我們</a>
                                     <a href="QA.aspx">常見問題</a>
+                                    <a href="login.aspx">後臺管理</a>
                                 </div>
                             </div>
                         </div>
@@ -144,5 +153,6 @@
     </form>
     <asp:ContentPlaceHolder ID="script" runat="server">
     </asp:ContentPlaceHolder>
+
 </body>
 </html>
