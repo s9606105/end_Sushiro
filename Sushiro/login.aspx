@@ -93,7 +93,8 @@
             <div class="menu-content-frame">
                 <div class="container w12">
                     <div class ="login-container">
-                        <div class="login-div" style="width: 230px;">
+                        <asp:Panel ID="Panel2" runat="server">
+                            <div class="login-div" style="width: 230px;">
                             <asp:Label ID="l_Id" runat="server" Text="帳號"></asp:Label>
                             <asp:TextBox ID="tb_Id" runat="server"></asp:TextBox>
                         </div>
@@ -102,14 +103,19 @@
                             <asp:Label ID="l_Password" runat="server" Text="密碼"></asp:Label>
                             <asp:TextBox ID="tb_Password" runat="server"></asp:TextBox>
                         </div>
+                        <div class ="login-div" style="width: 230px;">
 
+                            <asp:Label id="hint" runat="server" style="color:red;" Visible="False">帳號或密碼錯誤</asp:Label>
+                        </div>
                         <asp:Button class="login-div" ID="b_login" runat="server" Text="登入" OnClick="b_login_Click" />
 
+                        </asp:Panel>
+                        
 
                         <asp:Panel ID="Panel1" runat="server" Visible="False" CssClass="login-div">
-                            <asp:SqlDataSource ID="sds_1" runat="server" ConnectionString="<%$ ConnectionStrings:ContactUsConnectionString4 %>" DeleteCommand="DELETE FROM [contact] WHERE [name] = @name" InsertCommand="INSERT INTO [contact] ([name], [sex], [number], [email], [contact], [point], [store], [date], [time], [tablenum], [content]) VALUES (@name, @sex, @number, @email, @contact, @point, @store, @date, @time, @tablenum, @content)" SelectCommand="SELECT * FROM [contact]" UpdateCommand="UPDATE [contact] SET [sex] = @sex, [number] = @number, [email] = @email, [contact] = @contact, [point] = @point, [store] = @store, [date] = @date, [time] = @time, [tablenum] = @tablenum, [content] = @content WHERE [name] = @name">
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ContactUsConnectionString7 %>" DeleteCommand="DELETE FROM [contact] WHERE [ID] = @ID" InsertCommand="INSERT INTO [contact] ([name], [sex], [number], [email], [contact], [point], [store], [date], [time], [tablenum], [content]) VALUES (@name, @sex, @number, @email, @contact, @point, @store, @date, @time, @tablenum, @content)" SelectCommand="SELECT * FROM [contact]" UpdateCommand="UPDATE [contact] SET [name] = @name, [sex] = @sex, [number] = @number, [email] = @email, [contact] = @contact, [point] = @point, [store] = @store, [date] = @date, [time] = @time, [tablenum] = @tablenum, [content] = @content WHERE [ID] = @ID">
                                 <DeleteParameters>
-                                    <asp:Parameter Name="name" Type="String" />
+                                    <asp:Parameter Name="ID" Type="Int32" />
                                 </DeleteParameters>
                                 <InsertParameters>
                                     <asp:Parameter Name="name" Type="String" />
@@ -125,6 +131,7 @@
                                     <asp:Parameter Name="content" Type="String" />
                                 </InsertParameters>
                                 <UpdateParameters>
+                                    <asp:Parameter Name="name" Type="String" />
                                     <asp:Parameter Name="sex" Type="String" />
                                     <asp:Parameter Name="number" Type="String" />
                                     <asp:Parameter Name="email" Type="String" />
@@ -135,13 +142,14 @@
                                     <asp:Parameter Name="time" Type="String" />
                                     <asp:Parameter Name="tablenum" Type="Int32" />
                                     <asp:Parameter Name="content" Type="String" />
-                                    <asp:Parameter Name="name" Type="String" />
+                                    <asp:Parameter Name="ID" Type="Int32" />
                                 </UpdateParameters>
                             </asp:SqlDataSource>
-                            <asp:GridView ID="gd_view" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="name" DataSourceID="sds_1" Width="1129px">
+                            <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="SqlDataSource1" Width="1130px">
                                 <Columns>
                                     <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
-                                    <asp:BoundField DataField="name" HeaderText="name" ReadOnly="True" SortExpression="name" />
+                                    <asp:BoundField DataField="ID" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="ID" />
+                                    <asp:BoundField DataField="name" HeaderText="name" SortExpression="name" />
                                     <asp:BoundField DataField="sex" HeaderText="sex" SortExpression="sex" />
                                     <asp:BoundField DataField="number" HeaderText="number" SortExpression="number" />
                                     <asp:BoundField DataField="email" HeaderText="email" SortExpression="email" />

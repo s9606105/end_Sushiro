@@ -16,7 +16,8 @@ namespace Sushiro
         protected void Page_Load(object sender, EventArgs e)
         {
 
-
+           
+            
 
         }
 
@@ -38,10 +39,14 @@ namespace Sushiro
                     if(tb_Id.Text == o_r[0].ToString() && tb_Password.Text == o_r[1].ToString())
                     {
                         Panel1.Visible= true;
+                        Panel2.Visible = false;
+                        hint.Visible = false;
                     }
                     else
                     {
                         Panel1.Visible = false;
+                        Panel2.Visible = true;
+                        hint.Visible = true;
                     }
                 }
                 o_conn.Close();

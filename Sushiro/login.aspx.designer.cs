@@ -24,6 +24,15 @@ namespace Sushiro
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// Panel2 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel2;
+
+        /// <summary>
         /// l_Id 控制項。
         /// </summary>
         /// <remarks>
@@ -60,6 +69,15 @@ namespace Sushiro
         protected global::System.Web.UI.WebControls.TextBox tb_Password;
 
         /// <summary>
+        /// hint 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label hint;
+
+        /// <summary>
         /// b_login 控制項。
         /// </summary>
         /// <remarks>
@@ -78,21 +96,21 @@ namespace Sushiro
         protected global::System.Web.UI.WebControls.Panel Panel1;
 
         /// <summary>
-        /// sds_1 控制項。
+        /// SqlDataSource1 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource sds_1;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
 
         /// <summary>
-        /// gd_view 控制項。
+        /// GridView1 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gd_view;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }

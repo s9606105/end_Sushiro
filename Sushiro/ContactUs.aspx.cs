@@ -9,6 +9,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml.Linq;
 using System.Data;
+using System.Drawing.Printing;
 
 namespace Sushiro
 {
@@ -92,23 +93,51 @@ namespace Sushiro
             if (tb_Code.Text == HiddenField1.Value)
             {
 
-                try
+                if (dpl_Subject.Text == "意見反饋")
                 {
-                    string a, b, c, d;
-                    if (dpl_Subject.Text != "意見反饋")
-                    {
-                        a = " ";
-                        b = " ";
-                        c = " ";
-                        d = " ";
-                    }
-                    else
-                    {
-                        a = dpl_Store.Text;
-                        b = datepicker.Text;
-                        c = timepicker.Text;
-                        d = tb_Tablenum.Text;
-                    }
+                    SqlConnection o_conn = new SqlConnection(
+                    ConfigurationManager.ConnectionStrings["MyCon"].ConnectionString);
+                    o_conn.Open();
+                    SqlDataAdapter o_a = new SqlDataAdapter("select * from contact", o_conn);
+                    SqlCommand o_cmd = new SqlCommand("Insert into contact (name,sex,number,email," +
+                        "contact,point,store,date,time,tablenum,content)" +
+                        "values(@Name,@Sex,@Number,@Email,@Contact,@Point,@Store,@Date,@Time,@Tablenum,@Content)", o_conn
+                        );
+                    o_cmd.Parameters.Add("@Name", SqlDbType.NVarChar, 15);
+                    o_cmd.Parameters["@Name"].Value = tb_Name.Text;
+                    o_cmd.Parameters.Add("@Sex", SqlDbType.NVarChar, 10);
+                    o_cmd.Parameters["@Sex"].Value = RadioButtonList1.Text;
+                    o_cmd.Parameters.Add("@Number", SqlDbType.NVarChar, 10);
+                    o_cmd.Parameters["@Number"].Value = tb_Number.Text;
+                    o_cmd.Parameters.Add("@Email", SqlDbType.NVarChar, 50);
+                    o_cmd.Parameters["@Email"].Value = tb_email.Text;
+                    o_cmd.Parameters.Add("@Contact", SqlDbType.NVarChar, 10);
+                    o_cmd.Parameters["@Contact"].Value = RadioButtonList2.Text;
+                    o_cmd.Parameters.Add("@Point", SqlDbType.NVarChar, 10);
+                    o_cmd.Parameters["@Point"].Value = dpl_Subject.Text;
+                    o_cmd.Parameters.Add("@Store", SqlDbType.NVarChar, 10);
+                    if (dpl_Store.Text == "") { o_cmd.Parameters["@Store"].Value = "0"; }
+                    else { o_cmd.Parameters["@Store"].Value = dpl_Store.Text; }
+                    o_cmd.Parameters.Add("@Date", SqlDbType.NVarChar, 15);
+                    if (datepicker.Text == "") { o_cmd.Parameters["@Date"].Value = "0"; }
+                    else { o_cmd.Parameters["@Date"].Value = datepicker.Text; }
+                    o_cmd.Parameters.Add("@Time", SqlDbType.NVarChar, 15);
+                    if(timepicker.Text== "") { o_cmd.Parameters["@Time"].Value = "0"; }
+                    else { o_cmd.Parameters["@Time"].Value = timepicker.Text; }
+                    o_cmd.Parameters.Add("@Tablenum", SqlDbType.Int);
+                    if(tb_Tablenum.Text == "") { o_cmd.Parameters["@Tablenum"].Value = "0"; }
+                    else { o_cmd.Parameters["@Tablenum"].Value = tb_Tablenum.Text; }
+                    o_cmd.Parameters.Add("@Content", SqlDbType.NVarChar, 50);
+                    if (txtContent.Text == ""){o_cmd.Parameters["@Content"].Value = " ";}
+                    else { o_cmd.Parameters["@Content"].Value = txtContent.Text; }
+                    o_cmd.ExecuteNonQuery();
+                    Response.Redirect("https://localhost:44306/ContactUs.aspx", false);
+                    HttpContext.Current.ApplicationInstance.CompleteRequest();
+                    o_conn.Close();
+
+                }
+                else
+                {
                     SqlConnection o_conn = new SqlConnection(
                         ConfigurationManager.ConnectionStrings["MyCon"].ConnectionString);
                     o_conn.Open();
@@ -130,29 +159,27 @@ namespace Sushiro
                     o_cmd.Parameters.Add("@Point", SqlDbType.NVarChar, 10);
                     o_cmd.Parameters["@Point"].Value = dpl_Subject.Text;
                     o_cmd.Parameters.Add("@Store", SqlDbType.NVarChar, 10);
-                    o_cmd.Parameters["@Store"].Value = a;
+                    if (dpl_Store.Text == "") { o_cmd.Parameters["@Store"].Value = "0"; }
+                    else { o_cmd.Parameters["@Store"].Value = dpl_Store.Text; }
                     o_cmd.Parameters.Add("@Date", SqlDbType.NVarChar, 15);
-                    o_cmd.Parameters["@Date"].Value = b;
+                    if (datepicker.Text == "") { o_cmd.Parameters["@Date"].Value = "0"; }
+                    else { o_cmd.Parameters["@Date"].Value = datepicker.Text; }
                     o_cmd.Parameters.Add("@Time", SqlDbType.NVarChar, 15);
-                    o_cmd.Parameters["@Time"].Value = c;
+                    if (timepicker.Text == "") { o_cmd.Parameters["@Time"].Value = "0"; }
+                    else { o_cmd.Parameters["@Time"].Value = timepicker.Text; }
                     o_cmd.Parameters.Add("@Tablenum", SqlDbType.Int);
-                    o_cmd.Parameters["@Tablenum"].Value = d;
+                    if (tb_Tablenum.Text == "") { o_cmd.Parameters["@Tablenum"].Value = "0"; }
+                    else { o_cmd.Parameters["@Tablenum"].Value = tb_Tablenum.Text; }
                     o_cmd.Parameters.Add("@Content", SqlDbType.NVarChar, 50);
-                    o_cmd.Parameters["@Content"].Value = txtContent.Text;
+                    if (txtContent.Text == "") { o_cmd.Parameters["@Content"].Value = "0"; }
+                    else { o_cmd.Parameters["@Content"].Value = txtContent.Text; }
 
                     o_cmd.ExecuteNonQuery();
                     Response.Redirect("https://localhost:44306/ContactUs.aspx", false);
                     HttpContext.Current.ApplicationInstance.CompleteRequest();
                     o_conn.Close();
+                   
                 }
-                catch (Exception o_ex)
-                {
-                    tb_Name.Text = "123";
-                }
-            }
-            else
-            {
-                tb_Code.Text = "not ok";
             }
         }
     }
