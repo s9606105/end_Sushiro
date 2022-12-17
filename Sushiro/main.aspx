@@ -116,6 +116,81 @@
                 </div>
             </div>
         </div>
+        <div class="container-fluid cont_frame service-frame">
+            <div class="container aos-init aos-animate" data-aos="fade-zoom-in">
+                <div class="row">
+                    <!-- 訂位service -->
+                    <div class="col-md-12 col-lg-4">
+                        <h2 class="title02">訂位APP
+                        </h2>
+                        <div class="content-service service-box color-main-bg">
+                            <div class="service-container">
+                                <div class="service-font">
+                                    <h3><span>壽司郎</span>專屬訂位APP</h3>
+                                    <div class="app-img">
+                                        <a href="https://itunes.apple.com/tw/app/%E5%8F%B0%E7%81%A3%E5%A3%BD%E5%8F%B8%E9%83%8E/id1353326612?l=en&amp;mt=8" target="_blank">
+                                            <img src="https://www.sushiro.com.tw/content/images/ft_app_btn01.png" alt="App Store">
+                                        </a>
+                                        <a href="https://play.google.com/store/apps/details?id=tw.co.akindo_sushiro.sushiroapp" target="_blank">
+                                            <img src="https://www.sushiro.com.tw/content/images/ft_app_btn02.png" alt="Google play">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="phone">
+                                    <img src="https://www.sushiro.com.tw/content/images/phone.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /訂位service -->
+                    <!-- 外帶服務 -->
+                    <div class="col-md-12 col-lg-4">
+                        <h2 class="title02">外帶服務</h2>
+                        <a class="hover-frame" href="https://www.facebook.com/Sushiro.TW/menu/?ref=page_internal" target="_blank">
+                            <div class="content-service service-box take-out-frame">
+                                <div class="hover-color">
+                                    <p class="title02 color01">了解詳情</p>
+                                    
+                                </div>
+
+                                <div class="delivery-box">
+                                    <div class="service-font">
+                                        <img src="https://www.sushiro.com.tw/content/images/take-out.svg">
+                                        <div>
+                                            <h3><span>來店自取</span>外帶餐點美味帶著走</h3>
+                                            <p class="font-spacing-0">TAKE OUT</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- /外帶服務 -->
+                    <!-- 外送服務 -->
+                    <div class="col-md-12 col-lg-4">
+                        <h2 class="title02">外送服務</h2>
+                        <a class="hover-frame" href="/Shop" target="_blank">
+                            <div class="content-service service-box delivery-frame">
+                                <div class="hover-color">
+                                    <p class="title02 color01">立即點餐</p>
+                                </div>
+
+                                <div class="delivery-box">
+                                    <div class="service-font">
+                                        <img src="https://www.sushiro.com.tw/content/images/motorcycle.svg">
+                                        <div>
+                                            <h3><span>美味免出門</span>外送平台熱情上線</h3>
+                                            <p>立即點餐</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- /外送服務 -->
+                </div>
+            </div>
+        </div>
     </div>
     <!-- end content -->
 </asp:Content>
