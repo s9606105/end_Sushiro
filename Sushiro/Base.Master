@@ -78,7 +78,7 @@
                                     <li><a class="nav-link" href="#">店鋪一覽</a></li>
                                     <li><a class="nav-link" href="Menu.aspx">菜單</a></li>
                                     <li><a class="nav-link" href="Recruiting.aspx">人才招募</a></li>
-                                    <li><a class="nav-link" href="#">店鋪募集</a></li>
+                                    <li><a class="nav-link" href="ShopRecruitment.aspx">店鋪募集</a></li>
                                     <li><a class="nav-link" href="QA.aspx">常見問題</a></li>
                                     <li><a class="nav-link" href="ContactUs.aspx">聯絡我們</a></li>
                                 </ul>

@@ -277,6 +277,8 @@
     <Content Include="Order.aspx" />
     <Content Include="QA.aspx" />
     <Content Include="Recruiting.aspx" />
+    <Content Include="Shop.aspx" />
+    <Content Include="ShopRecruitment.aspx" />
     <Content Include="style.css" />
     <Content Include="main.aspx" />
     <Content Include="style.css" />
@@ -363,6 +365,20 @@
     </Compile>
     <Compile Include="Recruiting.aspx.designer.cs">
       <DependentUpon>Recruiting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shop.aspx.cs">
+      <DependentUpon>Shop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shop.aspx.designer.cs">
+      <DependentUpon>Shop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShopRecruitment.aspx.cs">
+      <DependentUpon>ShopRecruitment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopRecruitment.aspx.designer.cs">
+      <DependentUpon>ShopRecruitment.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

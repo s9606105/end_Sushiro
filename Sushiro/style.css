@@ -778,6 +778,91 @@ ul > li > a:hover:after {
         background-color: #1a1311;
     }
 
+.recruitment_frame {
+    position: relative;
+}
+
+.recruitment_frame > img {
+    margin-bottom: 25px;
+}
+
+.img_fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.recruitment_frame .raise_title {
+    font-family: 'Shippori Mincho', serif;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 45px;
+    line-height: 50px;
+    text-shadow: 2px 2px 5px #ffffff;
+}
+
+.recruitment_frame .recruitment_box {
+    margin: 25px 0;
+}
+
+.recruitment_frame .recruitment_box .raise_shop_title_box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.recruitment_frame .recruitment_box .raise_shop_title_box p {
+    margin-left: 15px;
+}
+
+.recruitment_frame .recruitment_box img {
+    width: 60px;
+}
+
+.recruitment_frame .recruitment_box .raise_shop_title_box .raise_shop_title {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 26px;
+/*    text-shadow: none;*/
+    position: relative;
+}
+
+.recruitment_frame .recruitment_box_img {
+    height: 370px;
+    background-size: cover;
+    background-position: center;
+}
+
+.recruitment_frame .columnar {
+    margin: 0 0 5px;
+}
+
+.recruitment_frame .columnar .columnar_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    background-color: #a70719;
+    color: #ffffff;
+}
+
+.recruitment_frame .columnar .columnar_content {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background-color: #f7f7f7;
+    line-height: 20px;
+}
+
+.background_gray {
+    background-color: #f7f7f7;
+    background-image: url(https://www.sushiro.com.tw/content/images/service-bg.svg);
+    background-repeat: repeat;
+    background-size: 343px 243px;
+    background-attachment: fixed;
+}
+
+
+
 /* QA*/
 .QA-inner-content-title {
     font-weight: 100;
@@ -1159,17 +1244,27 @@ ul > li > a:hover:after {
     .container {
         max-width: 540px;
     }
+    .d01 {
+        height: auto;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .container {
         max-width: 720px;
     }
+    .d01 {
+        height: 380px;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
     .container {
         max-width: 960px;
+    }
+    .d01 {
+        height: 370px;
     }
 }
 
@@ -1184,6 +1279,12 @@ ul > li > a:hover:after {
     }
 }
 
+@media (max-width: 1199px) {
+    p {
+        letter-spacing: 0;
+    }
+}
+
 
 @media (max-width: 991px) {
     .sushi-box .sushi {
@@ -1192,11 +1293,20 @@ ul > li > a:hover:after {
         background-size: cover;
         padding: 5px;
     }
+    .recruitment_frame .recruitment_box_img {
+        height: 245px;
+    }
 }
 
 @media (max-width: 767px) {
     .sushi-box {
         width: calc(100% / 2 - 3px);
+    }
+    .recruitment_frame .raise_title {
+        font-size: 16px;
+        line-height: 24px;
+        top: 5px;
+        left: 10px;
     }
 }
 
