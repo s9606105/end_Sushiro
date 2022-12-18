@@ -1268,6 +1268,80 @@ ul > li > a:hover:after {
     margin-right: 30px ;
 }
 
+.aos-animate {
+    opacity: 1;
+    transform: translateZ(0);
+}
+
+.raise-frame::after {
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.raise-frame::after {
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.title-border {
+    height: 4px;
+    background-color: #a70719;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.raise-frame .raise-box .row {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.raise-frame .raise-box .raise-red {
+    height: 230px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #a70719;
+    background-image: url(../images/ring.svg);
+    background-repeat: repeat;
+}
+
+.col-lg-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.hover-box {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.raise-frame {
+    background-image: url(https://www.sushiro.com.tw/Content/images/raise.jpgimages/raise.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+
 /* QA*/
 .QA-inner-content-title {
     font-weight: 100;

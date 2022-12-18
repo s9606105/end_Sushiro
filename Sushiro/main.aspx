@@ -281,6 +281,46 @@
             </div>
         </div>
     </div>
+    <div class="container-fluid content-frame raise-frame aos-init aos-animate" data-aos="fade-zoom-in">
+        <div class="container raise-box">
+            <h2 class="title02">募集情報</h2>
+            <div class="row">
+                <a class="hover-frame col-lg-6" href="/Recruiting">
+                    <div class="hover-box raise-banner-height">
+                        <div class="hover-color">
+                            <p>了解詳情</p>
+                            <div class="title-border four-font"></div>
+                        </div>
+
+                        <div class="raise-square-1"></div>
+                        <div class="raise-square-2"></div>
+                        <div class="raise-banner raise-red">
+                            <div class="raise-font">
+                                <p>人才募集</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="hover-frame col-lg-6" href="/StoreRecruitment">
+                    <div class="hover-box raise-banner-height">
+                        <div class="hover-color">
+                            <p>了解詳情</p>
+                            <div class="title-border four-font"></div>
+                        </div>
+
+                        <div class="raise-square-1"></div>
+                        <div class="raise-square-2"></div>
+                        <div class="raise-banner raise-blue">
+                            <div class="raise-font">
+                                <p>店鋪募集</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
     <!-- end content -->
 </asp:Content>
 
