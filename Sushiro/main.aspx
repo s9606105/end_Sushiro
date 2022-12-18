@@ -214,7 +214,72 @@
             </div>
         </div>
         <!-- end bar -->
-        <!-- 這兒開始 -->
+        <div class="container-fluid cont_frame background-color-white">
+            <div class="container aos-init aos-animate" data-aos="fade-zoom-in">
+                <h2 class="title02">關於壽司郎</h2>
+                <div class="container p-0">
+                    <a class="hover-frame" href="CompanyPhy.aspx" target="_blank"></a>
+                    <div class="hover-box">
+                        <div class="hover-color">
+                            <p class="title02 ">了解詳情</p>
+                        </div>
+                        <div class="hover-box-bg-img" style="background-image: url(https://www.sushiro.com.tw/content/images/img2.png);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid content-frame background-color-white">
+            <div class="container aos-init aos-animate" data-aos="fade-zoom-in">
+                <h2 class="title02">社群媒體</h2>
+                <div class="row">
+                    <!-- fb -->
+                    <a class="hover-frame col-lg-4" href="https://www.facebook.com/Sushiro.TW/" target="_blank">
+                        <div class="hover-box social-frame">
+                            <div class="hover-color">
+                                <p class="title03">台湾スシロー</p>
+                                <div class="title-border four-font"></div>
+                            </div>
+
+                            <img src="https://www.sushiro.com.tw/Content/images/fb-social.svg">
+                            <div class="social-box fb">
+                                <h3>Facebook<span>台湾スシロー</span></h3>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- /fb -->
+                    <!-- ig -->
+                    <a class="hover-frame col-lg-4" href="https://www.instagram.com/sushiro.tw/?hl=zh-tw" target="_blank">
+                        <div class="hover-box social-frame">
+                            <div class="hover-color">
+                                <p class="title03">@sushiro.tw</p>
+                                <div class="title-border four-font"></div>
+                            </div>
+
+                            <img src="https://www.sushiro.com.tw/Content/images/ig-social.svg">
+                            <div class="social-box ig">
+                                <h3>Instagram<span>@sushiro.tw</span></h3>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- /ig -->
+                    <!-- line -->
+                    <a class="hover-frame col-lg-4" href="http://line.me/ti/p/@sushiro.tw" target="_blank">
+                        <div class="hover-box social-frame">
+                            <div class="hover-color">
+                                <p class="title03">加入壽司郎</p>
+                                <div class="title-border four-font"></div>
+                            </div>
+
+                            <img src="https://www.sushiro.com.tw/Content/images/line-social.svg">
+                            <div class="social-box line">
+                                <h3>LINE<span>加入壽司郎</span></h3>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- /line -->
+                </div>
+            </div>
+        </div>
     </div>
     <!-- end content -->
 </asp:Content>

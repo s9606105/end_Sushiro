@@ -1171,6 +1171,103 @@ ul > li > a:hover:after {
     margin-right: 5px;
 }
 
+.hover-box {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-box .hover-box-bg-img {
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.social-frame {
+    height: 150px;
+    background-color: #f7f7f7;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 15px;
+}
+
+.social-frame .social-box {
+    color: #1a1311;
+    font-weight: 100;
+    font-size: 26px;
+    line-height: 24px;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    width: 150px;
+}
+
+.social-frame .social-box span {
+    display: block;
+    font-size: 16px;
+    color: #a70719;
+}
+
+.social-frame .fb::after {
+    width: 30px;
+    height: 30px;
+    content: '';
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-image: url(https://www.sushiro.com.tw/Content/images/fb-triangle.svg);
+}
+.hover-color .four-font {
+    width: 80px;
+}
+
+.title-border {
+    height: 4px;
+    background-color: #a70719;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.hover-color p.title03{
+    border-bottom: none;
+}
+
+.hover-color .title-border {
+    background-color: #ffffff;
+}
+
+.social-frame .ig::after {
+    width: 30px;
+    height: 30px;
+    content: '';
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-image: url(https://www.sushiro.com.tw/Content/images/ig-triangle.svg);
+}
+
+.social-frame .line::after {
+    width: 30px;
+    height: 30px;
+    content: '';
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-image: url(https://www.sushiro.com.tw/Content/images/line-triangle.svg);
+}
+
+.social-frame img {
+    margin-right: 30px ;
+}
+
 /* QA*/
 .QA-inner-content-title {
     font-weight: 100;
