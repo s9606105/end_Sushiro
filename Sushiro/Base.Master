@@ -75,7 +75,7 @@
                                             <li class="dropdown-submenu"><a class="dropdown-item" href="Card.aspx">集點卡相關</a></li>
                                         </ul>
                                     </li>
-                                    <li><a class="nav-link" href="#">店鋪一覽</a></li>
+                                    <li><a class="nav-link" href="Shop.aspx">店鋪一覽</a></li>
                                     <li><a class="nav-link" href="Menu.aspx">菜單</a></li>
                                     <li><a class="nav-link" href="Recruiting.aspx">人才招募</a></li>
                                     <li><a class="nav-link" href="ShopRecruitment.aspx">店鋪募集</a></li>
@@ -125,10 +125,10 @@
                                 </div>
                                 <div class="foot_menu_txt">
                                     <a href="CompanyPhy.aspx">關於壽司郎</a>
-                                    <a href="#">店鋪一覽</a>
+                                    <a href="Shop.aspx">店鋪一覽</a>
                                     <a href="Menu.aspx">菜單</a>
                                     <a href="Recruiting.aspx">人才招募</a>
-                                    <a href="#">店鋪募集</a>
+                                    <a href="ShopRecruitment.aspx">店鋪募集</a>
                                     <a href="ContactUs.aspx" title="服務時間：平日9-18點">聯絡我們</a>
                                     <a href="QA.aspx">常見問題</a>
                                     <a href="login.aspx">後臺管理</a>

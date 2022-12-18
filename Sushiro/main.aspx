@@ -8,7 +8,7 @@
                     <img src="https://www.sushiro.com.tw/Upload/Banner/cb7daa41-a0dc-42b7-b376-49e9396f7654.jpg" class="carousel_img" alt="日本第一" />
                 </div>
                 <div class="carousel-item">
-                    <img src="https://th.bing.com/th/id/R.e973294bfb3aa36a7df77f4f37568bc6?rik=CVYLXKwO%2bNQ6og&pid=ImgRaw&r=0" class="carousel_img" alt="熱銷商品" />
+                    <img src="https://www.sushiro.com.tw/Upload/Banner/498eeca3-50c4-4839-87dd-74aa89e4b535.jpg" class="carousel_img" alt="熱銷商品" />
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -21,8 +21,30 @@
             </button>
         </div>
         <!-- end carousel -->
-        <div>
+        <div class="container-fluid shop_frame aos-init aos-animate" data-aos="fade-zoom-in">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-12 shop_title">
+                        <h2 class="content-title text-cente title02">
+                            <img class="icon01" src="https://www.sushiro.com.tw/content/images/location.svg">店鋪快速搜尋
+                        </h2>
+                    </div>
+                    <div class="col-md-4">
+                        <asp:DropDownList ID="ddl03" CssClass="form_control" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddl03_SelectedIndexChanged">
+                        </asp:DropDownList>
+                    </div>
+                    <div class="col-md-4">
+                        <asp:DropDownList ID="ddl04" CssClass="form_control" runat="server" AutoPostBack="true">
+                        </asp:DropDownList>
+                    </div>
+
+                    <div class="col-md-4">
+                        <asp:Button ID="btn_search" CssClass="main_button" runat="server" Text="搜尋" PostBackUrl="Shop.aspx" />
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- end shop search -->
         <div id="sub_menu_bg">
             <div id="sub_menu">
                 <h2 class="title01">菜單</h2>
@@ -91,9 +113,9 @@
                     </div>
                     <div class="ani01" role="group" aria-label="2 / 3">
                         <a href="#" class="_sup">
-                            <div class="ani_img" style="background-image: url(https://www.sushiro.com.tw/Upload/News/b8e81c70-cee2-4131-a87a-233725cb6023.jpg);"></div>
+                            <div class="ani_img" style="background-image: url(https://www.sushiro.com.tw/Upload/News/2e305d49-333a-4670-969b-d16efffc470f.jpg);"></div>
                             <div class="ani_text">
-                                <p>【壽司郎創意吃法⼩⾷堂──正宗鰻魚二吃篇】⁣</p>
+                                <p>【12/12起電力全開！⚡寶可夢疊疊杯集點活動開跑⚡】⁣</p>
                                 <div class="_"></div>
                                 <div class="btn_more">
                                     <span class="m_btn btn r_btn">more</span>
@@ -103,9 +125,9 @@
                     </div>
                     <div class="ani01" role="group" aria-label="3 / 3">
                         <a href="#" class="_sup">
-                            <div class="ani_img" style="background-image: url(https://www.sushiro.com.tw/Upload/News/e03d8840-d342-46d6-8d05-cb763b86f1ae.jpg);"></div>
+                            <div class="ani_img" style="background-image: url(https://www.sushiro.com.tw/Upload/News/751aaed8-d086-44a1-9933-dda9e45135ca.jpg);"></div>
                             <div class="ani_text">
-                                <p>【壽司郎創意吃法⼩⾷堂──第三話：超驚喜甜鹹層次⼼臟爆擊的秘密吃法篇】⁣</p>
+                                <p>【壽司郎創意吃法⼩⾷堂──第⼆話：停不了⼝的辣味噌拉麵篇】⁣</p>
                                 <div class="_"></div>
                                 <div class="btn_more">
                                     <span class="m_btn btn r_btn">more</span>
@@ -116,6 +138,7 @@
                 </div>
             </div>
         </div>
+        <!-- end sub_ad -->
         <div class="container-fluid cont_frame service-frame">
             <div class="container aos-init aos-animate" data-aos="fade-zoom-in">
                 <div class="row">
@@ -149,8 +172,7 @@
                         <a class="hover-frame" href="https://www.facebook.com/Sushiro.TW/menu/?ref=page_internal" target="_blank">
                             <div class="content-service service-box take-out-frame">
                                 <div class="hover-color">
-                                    <p class="title02 color01">了解詳情</p>
-                                    
+                                    <p class="title02">了解詳情</p>
                                 </div>
 
                                 <div class="delivery-box">
@@ -172,7 +194,7 @@
                         <a class="hover-frame" href="/Shop" target="_blank">
                             <div class="content-service service-box delivery-frame">
                                 <div class="hover-color">
-                                    <p class="title02 color01">立即點餐</p>
+                                    <p class="title02">立即點餐</p>
                                 </div>
 
                                 <div class="delivery-box">
@@ -191,6 +213,8 @@
                 </div>
             </div>
         </div>
+        <!-- end bar -->
+        <!-- 這兒開始 -->
     </div>
     <!-- end content -->
 </asp:Content>
