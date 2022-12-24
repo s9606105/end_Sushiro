@@ -1188,7 +1188,7 @@ ul > li > a:hover:after {
     background-position: center center;
 }
 
-.social-frame {
+.hover-frame>.social-frame {
     height: 150px;
     background-color: #f7f7f7;
     border: 1px solid #e1e1e1;
@@ -1334,12 +1334,117 @@ ul > li > a:hover:after {
 }
 
 .raise-frame {
-    background-image: url(https://www.sushiro.com.tw/Content/images/raise.jpgimages/raise.jpg);
+    background-image: url(https://www.sushiro.com.tw/Content/images/raise.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     position: relative;
+}
+
+.raise-frame .raise-box .raise-banner-height {
+    height: 230px;
+    margin-bottom: 15px;
+}
+
+.raise-frame .raise-box .raise-square-1::before,.raise-frame .raise-box .raise-square-1::after,
+.raise-frame .raise-box .raise-square-2::before,.raise-frame .raise-box .raise-square-2::after
+{
+    width: 10px;
+    height: 10px;
+    background-color: #DDC3A5;
+    position: absolute;
+    z-index: 2;
+    content: '';
+}
+
+.raise-frame .raise-box .raise-square-1::before {
+    bottom: 6px;
+    left: 8px;
+}
+
+.raise-frame .raise-box .raise-square-1::after{
+    left: 8px;
+    top: 6px;
+}
+
+.raise-frame .raise-box .raise-square-2::before {
+    bottom: 6px;
+    right: 8px;
+}
+
+.raise-frame .raise-box .raise-square-2::after{
+    right: 8px;
+    top: 6px;
+}
+
+.raise-frame .raise-box .raise-red {
+        height: 230px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: #a70719;
+        background-image: url(https://www.sushiro.com.tw/Content/images/ring.svg);
+        background-repeat: repeat;
+ }
+
+.raise-frame .raise-box .raise-red::before {
+    width: calc(100% - 35px);
+    height: calc(100% - 30px);
+    content: '';
+    border: 1px solid #DDC3A5;
+    position: absolute;
+}
+
+.raise-frame .raise-box .raise-font {
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 3px;
+    position: absolute;
+    color: #ffffff;
+}
+
+.raise-frame .raise-box .raise-font p {
+    font-size: 50px;
+}
+
+.raise-frame .raise-box .raise-red::after {
+    width: calc(100% - 15px);
+    height: calc(100% - 12px);
+    content: '';
+    border: 3px solid #DDC3A5;
+    position: absolute;
+}
+
+.raise-frame .raise-box .raise-blue {
+    height: 230px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #002350;
+    background-image: url(https://www.sushiro.com.tw/Content/images/raise2.svg);
+    background-repeat: repeat;
+}
+
+.raise-frame .raise-box .raise-blue::before {
+    width: calc(100% - 35px);
+    height: calc(100% - 30px);
+    content: '';
+    border: 1px solid #DDC3A5;
+    position: absolute;
+}
+
+.raise-frame .raise-box .raise-blue::after {
+    width: calc(100% - 15px);
+    height: calc(100% - 12px);
+    content: '';
+    border: 3px solid #DDC3A5;
+    position: absolute;
 }
 
 /* QA*/

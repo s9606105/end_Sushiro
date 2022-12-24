@@ -50,43 +50,43 @@
                 <h2 class="title01">菜單</h2>
                 <div class="manu_change">
                     <div class="menu_btn" role="group" aria-label="1 / 7">
-                        <a href="#">
+                        <a href="Menu.aspx#t1">
                             <img class="menu_btn_img" src="https://www.sushiro.com.tw/content/images/menu1.svg" />
                             <span class="m_btn btn">期間限定</span>
                         </a>
                     </div>
                     <div class="menu_btn" role="group" aria-label="2 / 7">
-                        <a href="#">
+                        <a href="Menu.aspx#t2">
                             <img class="menu_btn_img" src="https://www.sushiro.com.tw/content/images/menu2.svg" />
                             <span class="m_btn btn">外帶菜單</span>
                         </a>
                     </div>
                     <div class="menu_btn" role="group" aria-label="3 / 7">
-                        <a href="#">
+                        <a href="Menu.aspx#t3">
                             <img class="menu_btn_img" src="https://www.sushiro.com.tw/content/images/menu3.svg" />
                             <span class="m_btn btn">握壽司</span>
                         </a>
                     </div>
                     <div class="menu_btn" role="group" aria-label="4 / 7">
-                        <a href="#">
+                        <a href="Menu.aspx#t4">
                             <img class="menu_btn_img" src="https://www.sushiro.com.tw/content/images/menu4.svg" />
                             <span class="m_btn btn">軍艦．卷類</span>
                         </a>
                     </div>
                     <div class="menu_btn" role="group" aria-label="5 / 7">
-                        <a href="#">
+                        <a href="Menu.aspx#t5">
                             <img class="menu_btn_img" src="https://www.sushiro.com.tw/content/images/menu5.svg" />
                             <span class="m_btn btn">麵類．湯類</span>
                         </a>
                     </div>
                     <div class="menu_btn" role="group" aria-label="6 / 7">
-                        <a href="#">
+                        <a href="Menu.aspx#t6">
                             <img class="menu_btn_img" src="https://www.sushiro.com.tw/content/images/menu6.svg" />
                             <span class="m_btn btn">副餐類</span>
                         </a>
                     </div>
                     <div class="menu_btn" role="group" aria-label="7 / 7">
-                        <a href="#">
+                        <a href="Menu.aspx#t7">
                             <img class="menu_btn_img" src="https://www.sushiro.com.tw/content/images/menu7.svg" />
                             <span class="m_btn btn">甜點．飲料</span>
                         </a>
@@ -228,7 +228,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid content-frame background-color-white">
+        <div class="container-fluid cont_frame background-color-white">
             <div class="container aos-init aos-animate" data-aos="fade-zoom-in">
                 <h2 class="title02">社群媒體</h2>
                 <div class="row">
@@ -281,15 +281,14 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid content-frame raise-frame aos-init aos-animate" data-aos="fade-zoom-in">
+    <div class="container-fluid cont_frame raise-frame aos-init aos-animate" data-aos="fade-zoom-in">
         <div class="container raise-box">
             <h2 class="title02">募集情報</h2>
             <div class="row">
-                <a class="hover-frame col-lg-6" href="/Recruiting">
+                <a class="hover-frame col-lg-6" href="Recruiting.aspx">
                     <div class="hover-box raise-banner-height">
                         <div class="hover-color">
                             <p>了解詳情</p>
-                            <div class="title-border four-font"></div>
                         </div>
 
                         <div class="raise-square-1"></div>
@@ -302,11 +301,10 @@
                     </div>
                 </a>
 
-                <a class="hover-frame col-lg-6" href="/StoreRecruitment">
+                <a class="hover-frame col-lg-6" href="ShopRecruitment.aspx">
                     <div class="hover-box raise-banner-height">
                         <div class="hover-color">
                             <p>了解詳情</p>
-                            <div class="title-border four-font"></div>
                         </div>
 
                         <div class="raise-square-1"></div>
