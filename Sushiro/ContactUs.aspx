@@ -24,65 +24,67 @@
         <div>
             <!-- header -->
             <div id="header">
-                <div id="layout">
-                    <div id="d_c1">
-                        <img class="logo1" src="#" />
-                        <img class="logo2" src="#" />
-                    </div>
-                    <div id="d_c2">
-                        <div id="it01">
-                            <a class="btn d_btn" href="#">立即訂位</a>
-                            <div class="icon">
-                                <a href="https://page.line.me/sushiro.tw?openQrModal=true">
-                                    <img src="https://www.sushiro.com.tw/Content/images/line.svg" />
-                                </a>
-                                <a href="https://www.facebook.com/Sushiro.TW/">
-                                    <img src="https://www.sushiro.com.tw/Content/images/fb.svg" />
-                                </a>
-                                <a href="https://www.instagram.com/sushiro.tw/?hl=zh-tw">
-                                    <img src="https://www.sushiro.com.tw/Content/images/ig.svg" />
-                                </a>
+                    <div class="bg_block">
+                        <div id="layout" class="container">
+                        <div id="d_c1">
+                            <img class="logo1" src="#" />
+                            <img class="logo2" src="#" />
+                        </div>
+                        <div id="d_c2">
+                            <div id="it01">
+                                <a class="btn d_btn" href="#">立即訂位</a>
+                                <div class="icon">
+                                    <a href="https://page.line.me/sushiro.tw?openQrModal=true">
+                                        <div class="_img01"></div>
+                                    </a>
+                                    <a href="https://www.facebook.com/Sushiro.TW/">
+                                        <div class="_img02"></div>
+                                    </a>
+                                    <a href="https://www.instagram.com/sushiro.tw/?hl=zh-tw">
+                                        <div class="_img03"></div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    </div>
+                    <!-- end layout -->
+                    <div id="hp_menu container-fluid">
+                        <nav class="container navbar navbar-expand-lg">
+                            <a href="Main.aspx" class="logo-frame">
+                                <img class="logo3" src="https://www.sushiro.com.tw/Content/images/LOGO.svg" />
+                            </a>
+                            <!-- RWD button -->
+                            <button class="navbar-toggler hamburger-menu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu_list">
+                                <div class="toggler-icon"></div>
+                            </button>
+                            <!-- 導覽列超連結 -->
+                            <div class="collapse navbar-collapse justify-center" id="menu_list">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item dropdown">
+                                        <!-- dropdown 下拉式功能 -->
+                                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#">關於壽司郎</a>
+                                        <!-- 下拉式選項 -->
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu"><a class="dropdown-item" href="CompanyPhy.aspx">公司理念</a></li>
+                                            <li class="dropdown-submenu"><a class="dropdown-item" href="Order.aspx">點餐說明</a></li>
+                                            <li class="dropdown-submenu"><a class="dropdown-item" href="Card.aspx">集點卡相關</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-link" href="Shop.aspx">店鋪一覽</a></li>
+                                    <li><a class="nav-link" href="Menu.aspx">菜單</a></li>
+                                    <li><a class="nav-link" href="Recruiting.aspx">人才招募</a></li>
+                                    <li><a class="nav-link" href="ShopRecruitment.aspx">店鋪募集</a></li>
+                                    <li><a class="nav-link" href="QA.aspx">常見問題</a></li>
+                                    <li><a class="nav-link" href="ContactUs.aspx">聯絡我們</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!--end of navbar-->
+                    </div>
+                    <!-- end hp_menu -->
                 </div>
-                <!-- end layout -->
-                <div id="hp_menu">
-                    <nav class="navbar navbar-expand-lg">
-                        <a href="https://www.sushiro.com.tw/" class="logo-frame">
-                            <img class="logo3" src="https://www.sushiro.com.tw/Content/images/LOGO.svg" />
-                        </a>
-                        <!-- RWD button -->
-                        <button class="navbar-toggler hamburger-menu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu_list">
-                            <div class="toggler-icon"></div>
-                        </button>
-                        <!-- 導覽列超連結 -->
-                        <div class="collapse navbar-collapse justify-content-md-center" id="menu_list">
-                            <ul class="navbar-nav">
-                                <li class="nav-item dropdown">
-                                    <!-- dropdown 下拉式功能 -->
-                                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#">關於壽司郎</a>
-                                    <!-- 下拉式選項 -->
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown-submenu"><a class="dropdown-item" href="CompanyPhy.aspx">公司理念</a></li>
-                                        <li class="dropdown-submenu"><a class="dropdown-item" href="#">點餐說明</a></li>
-                                        <li class="dropdown-submenu"><a class="dropdown-item" href="#">集點卡相關</a></li>
-                                    </ul>
-                                </li>
-                                <li><a class="nav-link" href="#">店鋪一覽</a></li>
-                                <li><a class="nav-link" href="Menu.aspx">菜單</a></li>
-                                <li><a class="nav-link" href="Recruiting.aspx">人才招募</a></li>
-                                <li><a class="nav-link" href="#">店鋪募集</a></li>
-                                <li><a class="nav-link" href="QA.aspx">常見問題</a></li>
-                                <li><a class="nav-link" href="ContactUs.aspx">聯絡我們</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                    <!--end of navbar-->
-                </div>
-                <!-- end hp_menu -->
-            </div>
-            <!-- end header -->
+                <!-- end header -->
             <div class="title-frame-content">
                 <div class="container w12">
                     <h1 style="font-weight: bold;">聯絡我們</h1>
@@ -256,56 +258,55 @@
             <!-- End content -->
             <!-- footer -->
             <div id="footer">
-                <div id="foot_cont">
-                    <div class="row">
-                        <div class="col-lg-4 foot_logo">
-                            <img class="foot_logo3" src="https://www.sushiro.com.tw/Content/images/LOGO.svg" />
-                            <div>
-                                <img class="logo1" src="#" />
-                                <img class="logo2" src="#" />
-                            </div>
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="foot_menu_logo">
-                                <a class="foot_logo4">立即訂位</a>
-                                <div class="foot_icon">
-                                    <a href="https://page.line.me/sushiro.tw?openQrModal=true">
-                                        <img src="https://www.sushiro.com.tw/Content/images/line.svg" />
-                                    </a>
-                                    <a href="https://www.facebook.com/Sushiro.TW/">
-                                        <img src="https://www.sushiro.com.tw/Content/images/fb.svg" />
-                                    </a>
-                                    <a href="https://www.instagram.com/sushiro.tw/?hl=zh-tw">
-                                        <img src="https://www.sushiro.com.tw/Content/images/ig.svg" />
-                                    </a>
+                    <div id="foot_cont">
+                        <div class="row container">
+                            <div class="col-lg-4 foot_logo">
+                                <img class="foot_logo3" src="https://www.sushiro.com.tw/Content/images/LOGO.svg" />
+                                <div>
+                                    <img class="logo1" src="#" />
+                                    <img class="logo2" src="#" />
                                 </div>
                             </div>
-                            <div class="foot_menu_txt">
-                                <a href="CompanyPhy.aspx">關於壽司郎</a>
-                                <a href="#">店鋪一覽</a>
-                                <a href="Menu.aspx">菜單</a>
-                                <a href="Recruiting.aspx">人才招募</a>
-                                <a href="#">店鋪募集</a>
-                                <a href="ContactUs.aspx" title="服務時間：平日9-18點">聯絡我們</a>
-                                <a href="QA.aspx">常見問題</a>
-                                <a href="login.aspx">後臺管理</a>
+                            <div class="col-lg-8">
+                                <div class="foot_menu_logo">
+                                    <a class="foot_logo4">立即訂位</a>
+                                    <div class="foot_icon">
+                                        <a href="https://page.line.me/sushiro.tw?openQrModal=true">
+                                            <img src="https://www.sushiro.com.tw/Content/images/line.svg" />
+                                        </a>
+                                        <a href="https://www.facebook.com/Sushiro.TW/">
+                                            <img src="https://www.sushiro.com.tw/Content/images/fb.svg" />
+                                        </a>
+                                        <a href="https://www.instagram.com/sushiro.tw/?hl=zh-tw">
+                                            <img src="https://www.sushiro.com.tw/Content/images/ig.svg" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="foot_menu_txt">
+                                    <a href="CompanyPhy.aspx">關於壽司郎</a>
+                                    <a href="Shop.aspx">店鋪一覽</a>
+                                    <a href="Menu.aspx">菜單</a>
+                                    <a href="Recruiting.aspx">人才招募</a>
+                                    <a href="ShopRecruitment.aspx">店鋪募集</a>
+                                    <a href="ContactUs.aspx" title="服務時間：平日9-18點">聯絡我們</a>
+                                    <a href="QA.aspx">常見問題</a>
+                                    <a href="login.aspx">後臺管理</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- end footer -->
-            <!-- statment -->
-            <div id="statement">
-                <div class="s_con">
-                    <p>© AKINDO SUSHIRO CO., LTD. ALL RIGHTS RESERVED.</p>
-                    <div class="s_con_right">
-                        <a class="scr_left" href="#">網站使用權須知 </a>
-                        <a href="#">隱私政策聲明</a>
+                <!-- end footer -->
+                <div id="statement">
+                    <div class="s_con container">
+                        <p>© AKINDO SUSHIRO CO., LTD. ALL RIGHTS RESERVED.</p>
+                        <div class="s_con_right">
+                            <a class="scr_left" href="#">網站使用權須知 </a>
+                            <a href="#">隱私政策聲明</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- end statement -->
+                <!-- end statement -->
         </div>
     </form>
     <script>
