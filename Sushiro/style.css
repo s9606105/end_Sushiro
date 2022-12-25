@@ -1841,6 +1841,10 @@ ul > li > a:hover:after {
     margin-right: auto;
 }
 
+.login-height {
+    height: 750px;
+}
+
 /*********************************************************************************************************/
 /* media */
 @media screen and (min-width: 576px) {
@@ -1926,6 +1930,7 @@ ul > li > a:hover:after {
     #footer {
         height: 280px;
     }
+
     .foot_logo3 {
         height: 50px;
         width: 50px;
@@ -1974,15 +1979,18 @@ ul > li > a:hover:after {
         justify-content: inherit;
     }
 
-    .s_con > p {
-        margin: auto;
-    }
+        .s_con > p {
+            margin: auto;
+        }
+
     .form_control {
         margin-bottom: 10px;
     }
+
     .shop_frame {
         height: 280px;
     }
+
     .form_control {
         height: 40px;
     }
