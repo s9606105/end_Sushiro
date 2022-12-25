@@ -383,6 +383,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Base.Master" />
+    <Content Include="109111134.md" />
+    <Content Include="109111134.pdf" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
