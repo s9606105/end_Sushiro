@@ -27,20 +27,19 @@ p {
 
 #layout {
     margin-top: 15px;
-    margin-right: 20%;
-    margin-left: 20%;
-    width: 60%;
+    /*    margin-right: 20%;
+    margin-left: 20%;*/
     height: 120px;
 }
 
 #d_c1 {
-    margin-top: 45px;
+    margin-top: 60px;
     width: 50%;
     float: left;
 }
 
 #d_c2 {
-    margin-top: 40px;
+    margin-top: 60px;
     width: 50%;
     float: right;
 }
@@ -135,7 +134,6 @@ p {
     margin: 0 0 0 -50px;
     bottom: 50px;
     height: 100px;
-    width: 100px;
 }
 
 .foot_logo3 {
@@ -160,11 +158,23 @@ p {
     justify-content: space-between;
 }
 
-    .icon > a > img, .foot_icon > a > img {
+    .icon > a > div, .foot_icon > a > img {
         margin-left: 20px;
         height: 20px;
         width: 20px;
     }
+
+._img01 {
+    background-image: url(https://www.sushiro.com.tw/Content/images/line.svg);
+}
+
+._img02 {
+    background-image: url(https://www.sushiro.com.tw/Content/images/fb.svg);
+}
+
+._img03 {
+    background-image: url(https://www.sushiro.com.tw/Content/images/ig.svg);
+}
 
 .collapse {
     display: flex;
@@ -320,7 +330,7 @@ ul > li > a:hover:after {
 
 .r_btn {
     float: right;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 .ani01 {
@@ -388,6 +398,7 @@ ul > li > a:hover:after {
     .s_con > p {
         font-size: 12px;
         letter-spacing: 0;
+        margin: auto 0 auto 0;
     }
 
 .s_con_right > a {
@@ -792,9 +803,9 @@ ul > li > a:hover:after {
     position: relative;
 }
 
-.recruitment_frame > img {
-    margin-bottom: 25px;
-}
+    .recruitment_frame > img {
+        margin-bottom: 25px;
+    }
 
 .img_fluid {
     max-width: 100%;
@@ -815,26 +826,26 @@ ul > li > a:hover:after {
     margin: 25px 0;
 }
 
-.recruitment_frame .recruitment_box .raise_shop_title_box {
-    display: flex;
-    align-items: center;
-    margin-bottom: 25px;
-}
+    .recruitment_frame .recruitment_box .raise_shop_title_box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
 
-.recruitment_frame .recruitment_box .raise_shop_title_box p {
-    margin-left: 15px;
-}
+        .recruitment_frame .recruitment_box .raise_shop_title_box p {
+            margin-left: 15px;
+        }
 
-.recruitment_frame .recruitment_box img {
-    width: 60px;
-}
+    .recruitment_frame .recruitment_box img {
+        width: 60px;
+    }
 
-.recruitment_frame .recruitment_box .raise_shop_title_box .raise_shop_title {
-    font-family: 'Shippori Mincho', serif;
-    font-size: 26px;
-/*    text-shadow: none;*/
-    position: relative;
-}
+    .recruitment_frame .recruitment_box .raise_shop_title_box .raise_shop_title {
+        font-family: 'Shippori Mincho', serif;
+        font-size: 26px;
+        /*    text-shadow: none;*/
+        position: relative;
+    }
 
 .recruitment_frame .recruitment_box_img {
     height: 370px;
@@ -846,22 +857,22 @@ ul > li > a:hover:after {
     margin: 0 0 5px;
 }
 
-.recruitment_frame .columnar .columnar_title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 65px;
-    background-color: #a70719;
-    color: #ffffff;
-}
+    .recruitment_frame .columnar .columnar_title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 65px;
+        background-color: #a70719;
+        color: #ffffff;
+    }
 
-.recruitment_frame .columnar .columnar_content {
-    display: flex;
-    align-items: center;
-    height: 65px;
-    background-color: #f7f7f7;
-    line-height: 20px;
-}
+    .recruitment_frame .columnar .columnar_content {
+        display: flex;
+        align-items: center;
+        height: 65px;
+        background-color: #f7f7f7;
+        line-height: 20px;
+    }
 
 .background_gray {
     background-color: #f7f7f7;
@@ -911,18 +922,19 @@ ul > li > a:hover:after {
     color: #ffffff;
 }
 
-.service-font h3 span {
-    font-size: 25px;
-    display: block;
-}
+    .service-font h3 span {
+        font-size: 25px;
+        display: block;
+    }
+
 .service-font .app-img {
     /* margin-top: 10px; */
 }
 
-.service-font .app-img img {
-    height: 33px;
-    margin-bottom: 5px;
-}
+    .service-font .app-img img {
+        height: 33px;
+        margin-bottom: 5px;
+    }
 
 .take-out-frame {
     border: 8px solid #a70719;
@@ -945,40 +957,42 @@ ul > li > a:hover:after {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    text-align:center;
+    text-align: center;
 }
 
-.hover-color p {
-    font-size: 20px;
-    color: #ffffff;
-    border-bottom: 4px solid #fff;
-    margin: 0 auto;
-}
+    .hover-color p {
+        font-size: 20px;
+        color: #ffffff;
+        border-bottom: 4px solid #fff;
+        margin: 0 auto;
+    }
 
 .delivery-box {
     margin: 0 auto;
 }
 
-.delivery-box .service-font {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+    .delivery-box .service-font {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-.delivery-box .service-font img {
-    width: 65px;
-    margin-right: 5px;
-}
-.delivery-box h3 {
-    color: #1a1311;
-    margin-bottom: 5px;
-}
+        .delivery-box .service-font img {
+            width: 65px;
+            margin-right: 5px;
+        }
+
+    .delivery-box h3 {
+        color: #1a1311;
+        margin-bottom: 5px;
+    }
 
 .service-font h3 span {
     font-size: 25px;
     display: block;
 }
+
 .delivery-box span {
     color: #a70719;
 }
@@ -1009,6 +1023,7 @@ ul > li > a:hover:after {
 .hover-color:hover {
     opacity: 1;
 }
+
 .delivery-frame {
     border: 8px solid #a70719;
     background-color: #F8F7F2;
@@ -1016,25 +1031,25 @@ ul > li > a:hover:after {
     border: 0;
 }
 
-.delivery-frame::before {
-    width: 100%;
-    height: 30px;
-    background-color: #a70719;
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-}
+    .delivery-frame::before {
+        width: 100%;
+        height: 30px;
+        background-color: #a70719;
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
 
-.delivery-frame::after {
-    width: 100%;
-    height: 30px;
-    background-color: #a70719;
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
+    .delivery-frame::after {
+        width: 100%;
+        height: 30px;
+        background-color: #a70719;
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
 
 .shop_frame {
     display: flex;
@@ -1047,14 +1062,14 @@ ul > li > a:hover:after {
     padding: 15px;
 }
 
-.shop_frame .shop_title {
-    font-weight: 100;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 3px;
-    color: #ffffff;
-    text-align: center;
-}
+    .shop_frame .shop_title {
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 3px;
+        color: #ffffff;
+        text-align: center;
+    }
 
 .content-title .icon01 {
     width: 15px;
@@ -1099,57 +1114,57 @@ ul > li > a:hover:after {
     margin-bottom: 20px;
 }
 
-.shop_list .inner-border-style .inner-border-frame {
-    width: 100%;
-    border: 1px solid #e1e1e1;
-    background-color: #f7f7f7;
-}
+    .shop_list .inner-border-style .inner-border-frame {
+        width: 100%;
+        border: 1px solid #e1e1e1;
+        background-color: #f7f7f7;
+    }
 
-.shop_list .inner-border-style .inner-border-frame a {
-    transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    color: #4e2901;
-}
+        .shop_list .inner-border-style .inner-border-frame a {
+            transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            color: #4e2901;
+        }
 
-.shop_list .inner-border-style .inner-border-frame .inner-border-box {
-    overflow: hidden;
-    margin: 5px;
-}
+        .shop_list .inner-border-style .inner-border-frame .inner-border-box {
+            overflow: hidden;
+            margin: 5px;
+        }
 
-.shop_list .inner-border-style .inner-border-frame .inner-border-box .hover-img {
-    transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    display: block;
-    height: 250px;
-    background-size: cover;
-    background-position: center;
-}
+            .shop_list .inner-border-style .inner-border-frame .inner-border-box .hover-img {
+                transition: all 0.3s;
+                -moz-transition: all 0.3s;
+                -webkit-transition: all 0.3s;
+                -o-transition: all 0.3s;
+                display: block;
+                height: 250px;
+                background-size: cover;
+                background-position: center;
+            }
 
-.shop_list .inner-border-style .inner-border-frame .inner-border-box-font {
-    margin: 20px;
-}
+        .shop_list .inner-border-style .inner-border-frame .inner-border-box-font {
+            margin: 20px;
+        }
 
-.shop_list .inner-border-style .inner-border-frame .inner-border-box-font h3 {
-    font-size: 20px;
-    margin-bottom: 5px;
-}
+            .shop_list .inner-border-style .inner-border-frame .inner-border-box-font h3 {
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
 
-.shop_list .inner-border-style p {
-    color: #a98e70;
-}
+    .shop_list .inner-border-style p {
+        color: #a98e70;
+    }
 
-.shop_list .inner-border-style .inner-border-frame .inner-border-box-font .inner-border-box-font-content {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 3px;
-    margin: 10px 0;
-    height: auto;
-}
+    .shop_list .inner-border-style .inner-border-frame .inner-border-box-font .inner-border-box-font-content {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 3px;
+        margin: 10px 0;
+        height: auto;
+    }
 
 .delivery-bt {
     transition: all 0.3s;
@@ -1166,10 +1181,10 @@ ul > li > a:hover:after {
     padding: 8px 13px 10px;
 }
 
-.delivery-bt img {
-    width: 15px;
-    margin-right: 5px;
-}
+    .delivery-bt img {
+        width: 15px;
+        margin-right: 5px;
+    }
 
 .hover-box {
     height: 300px;
@@ -1180,15 +1195,15 @@ ul > li > a:hover:after {
     align-items: center;
 }
 
-.hover-box .hover-box-bg-img {
-    width: 100%;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
+    .hover-box .hover-box-bg-img {
+        width: 100%;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
 
-.hover-frame>.social-frame {
+.hover-frame > .social-frame {
     height: 150px;
     background-color: #f7f7f7;
     border: 1px solid #e1e1e1;
@@ -1206,11 +1221,11 @@ ul > li > a:hover:after {
     width: 150px;
 }
 
-.social-frame .social-box span {
-    display: block;
-    font-size: 16px;
-    color: #a70719;
-}
+    .social-frame .social-box span {
+        display: block;
+        font-size: 16px;
+        color: #a70719;
+    }
 
 .social-frame .fb::after {
     width: 30px;
@@ -1222,6 +1237,7 @@ ul > li > a:hover:after {
     right: 5px;
     background-image: url(https://www.sushiro.com.tw/Content/images/fb-triangle.svg);
 }
+
 .hover-color .four-font {
     width: 80px;
 }
@@ -1234,7 +1250,7 @@ ul > li > a:hover:after {
     margin-top: 5px;
 }
 
-.hover-color p.title03{
+.hover-color p.title03 {
     border-bottom: none;
 }
 
@@ -1265,7 +1281,7 @@ ul > li > a:hover:after {
 }
 
 .social-frame img {
-    margin-right: 30px ;
+    margin-right: 30px;
 }
 
 .aos-animate {
@@ -1342,43 +1358,42 @@ ul > li > a:hover:after {
     position: relative;
 }
 
-.raise-frame .raise-box .raise-banner-height {
-    height: 230px;
-    margin-bottom: 15px;
-}
+    .raise-frame .raise-box .raise-banner-height {
+        height: 230px;
+        margin-bottom: 15px;
+    }
 
-.raise-frame .raise-box .raise-square-1::before,.raise-frame .raise-box .raise-square-1::after,
-.raise-frame .raise-box .raise-square-2::before,.raise-frame .raise-box .raise-square-2::after
-{
-    width: 10px;
-    height: 10px;
-    background-color: #DDC3A5;
-    position: absolute;
-    z-index: 2;
-    content: '';
-}
+    .raise-frame .raise-box .raise-square-1::before, .raise-frame .raise-box .raise-square-1::after,
+    .raise-frame .raise-box .raise-square-2::before, .raise-frame .raise-box .raise-square-2::after {
+        width: 10px;
+        height: 10px;
+        background-color: #DDC3A5;
+        position: absolute;
+        z-index: 2;
+        content: '';
+    }
 
-.raise-frame .raise-box .raise-square-1::before {
-    bottom: 6px;
-    left: 8px;
-}
+    .raise-frame .raise-box .raise-square-1::before {
+        bottom: 6px;
+        left: 8px;
+    }
 
-.raise-frame .raise-box .raise-square-1::after{
-    left: 8px;
-    top: 6px;
-}
+    .raise-frame .raise-box .raise-square-1::after {
+        left: 8px;
+        top: 6px;
+    }
 
-.raise-frame .raise-box .raise-square-2::before {
-    bottom: 6px;
-    right: 8px;
-}
+    .raise-frame .raise-box .raise-square-2::before {
+        bottom: 6px;
+        right: 8px;
+    }
 
-.raise-frame .raise-box .raise-square-2::after{
-    right: 8px;
-    top: 6px;
-}
+    .raise-frame .raise-box .raise-square-2::after {
+        right: 8px;
+        top: 6px;
+    }
 
-.raise-frame .raise-box .raise-red {
+    .raise-frame .raise-box .raise-red {
         height: 230px;
         width: 100%;
         display: flex;
@@ -1388,63 +1403,67 @@ ul > li > a:hover:after {
         background-color: #a70719;
         background-image: url(https://www.sushiro.com.tw/Content/images/ring.svg);
         background-repeat: repeat;
- }
+    }
 
-.raise-frame .raise-box .raise-red::before {
-    width: calc(100% - 35px);
-    height: calc(100% - 30px);
-    content: '';
-    border: 1px solid #DDC3A5;
-    position: absolute;
-}
+        .raise-frame .raise-box .raise-red::before {
+            width: calc(100% - 35px);
+            height: calc(100% - 30px);
+            content: '';
+            border: 1px solid #DDC3A5;
+            position: absolute;
+        }
 
-.raise-frame .raise-box .raise-font {
-    font-weight: 100;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 3px;
-    position: absolute;
-    color: #ffffff;
-}
+    .raise-frame .raise-box .raise-font {
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 3px;
+        position: absolute;
+        color: #ffffff;
+    }
 
-.raise-frame .raise-box .raise-font p {
-    font-size: 50px;
-}
+        .raise-frame .raise-box .raise-font p {
+            font-size: 50px;
+        }
 
-.raise-frame .raise-box .raise-red::after {
-    width: calc(100% - 15px);
-    height: calc(100% - 12px);
-    content: '';
-    border: 3px solid #DDC3A5;
-    position: absolute;
-}
+    .raise-frame .raise-box .raise-red::after {
+        width: calc(100% - 15px);
+        height: calc(100% - 12px);
+        content: '';
+        border: 3px solid #DDC3A5;
+        position: absolute;
+    }
 
-.raise-frame .raise-box .raise-blue {
-    height: 230px;
-    width: 100%;
-    display: flex;
+    .raise-frame .raise-box .raise-blue {
+        height: 230px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: #002350;
+        background-image: url(https://www.sushiro.com.tw/Content/images/raise2.svg);
+        background-repeat: repeat;
+    }
+
+        .raise-frame .raise-box .raise-blue::before {
+            width: calc(100% - 35px);
+            height: calc(100% - 30px);
+            content: '';
+            border: 1px solid #DDC3A5;
+            position: absolute;
+        }
+
+        .raise-frame .raise-box .raise-blue::after {
+            width: calc(100% - 15px);
+            height: calc(100% - 12px);
+            content: '';
+            border: 3px solid #DDC3A5;
+            position: absolute;
+        }
+
+.justify-center {
     justify-content: center;
-    align-items: center;
-    position: relative;
-    background-color: #002350;
-    background-image: url(https://www.sushiro.com.tw/Content/images/raise2.svg);
-    background-repeat: repeat;
-}
-
-.raise-frame .raise-box .raise-blue::before {
-    width: calc(100% - 35px);
-    height: calc(100% - 30px);
-    content: '';
-    border: 1px solid #DDC3A5;
-    position: absolute;
-}
-
-.raise-frame .raise-box .raise-blue::after {
-    width: calc(100% - 15px);
-    height: calc(100% - 12px);
-    content: '';
-    border: 3px solid #DDC3A5;
-    position: absolute;
 }
 
 /* QA*/
@@ -1828,6 +1847,7 @@ ul > li > a:hover:after {
     .container {
         max-width: 540px;
     }
+
     .d01 {
         height: auto;
     }
@@ -1837,16 +1857,17 @@ ul > li > a:hover:after {
     .container {
         max-width: 720px;
     }
+
     .d01 {
         height: 380px;
     }
-
 }
 
 @media screen and (min-width: 992px) {
     .container {
         max-width: 960px;
     }
+
     .d01 {
         height: 370px;
     }
@@ -1854,7 +1875,7 @@ ul > li > a:hover:after {
 
 
 @media screen and (min-width: 1200px) {
-    #foot_cont, .s_con, #hp_menu > nav {
+    #foot_cont, .s_con {
         width: 1140px;
     }
 
@@ -1871,14 +1892,43 @@ ul > li > a:hover:after {
 
 
 @media (max-width: 991px) {
+
+    .justify-center {
+        justify-content: left;
+    }
+
     .sushi-box .sushi {
         width: 150px;
         height: 150px;
         background-size: cover;
         padding: 5px;
     }
+
     .recruitment_frame .recruitment_box_img {
         height: 245px;
+    }
+
+    .logo3 {
+        position: inherit;
+        height: 50px;
+        margin: 0;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    #footer .foot_logo {
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    #footer {
+        height: 280px;
+    }
+    .foot_logo3 {
+        height: 50px;
+        width: 50px;
     }
 }
 
@@ -1886,11 +1936,59 @@ ul > li > a:hover:after {
     .sushi-box {
         width: calc(100% / 2 - 3px);
     }
+
     .recruitment_frame .raise_title {
         font-size: 16px;
         line-height: 24px;
         top: 5px;
         left: 10px;
+    }
+
+    #d_c1 .logo1, #d_c1 .logo2 {
+        opacity: 0;
+    }
+
+    ._img01 {
+        background-image: url(https://www.sushiro.com.tw/Content/images/line-w.svg);
+    }
+
+    ._img02 {
+        background-image: url(https://www.sushiro.com.tw/Content/images/fb-w.svg);
+    }
+
+    ._img03 {
+        background-image: url(https://www.sushiro.com.tw/Content/images/ig-w.svg);
+    }
+
+    #layout {
+        margin-top: 0;
+    }
+
+    .bg_block {
+        background-color: #1a1311;
+    }
+
+    .s_con {
+        height: 70px;
+        flex-direction: column;
+        justify-content: inherit;
+    }
+
+    .s_con > p {
+        margin: auto;
+    }
+    .form_control {
+        margin-bottom: 10px;
+    }
+    .shop_frame {
+        height: 280px;
+    }
+    .form_control {
+        height: 40px;
+    }
+
+    .shop_frame .main_button {
+        height: 40px;
     }
 }
 
